@@ -1,0 +1,20 @@
+/* =============
+    Section 6
+============= */
+#section-6 {
+    background-color: $orange;
+    color: $white;
+
+    section {
+        h1 {
+            border-color: $black;
+        }
+
+        p:last-child {
+            background-color: $black;
+            color: $white;
+            margin-top: 10px;
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/* =============
+    Section 3
+============= */
+#section-3 {
+    background-color: $light-grey;
+
+    .grid-content {
+        >section {
+            img {
+                width: 20%;
+            }
+
+            article {
+                h3 {
+                    font-size: rem-calc(20);
+                    margin-bottom: 10px;
+                }
+            }
+
+            article:nth-child(4) {
+                background-color: $white;
+                margin-top: 20px;
+                padding: 20px 0 0 0;
+
+                p:nth-child(2) {
+                    background-color: $orange;
+                    color: $white;
+                    padding: 10px;
+                }
+
+                p:nth-child(3) {
+                    background-color: $charcoal;
+                    color: $white;
+                    font-weight: 600;
+                    padding: 20px;
+                }
+            }
+
+            article:nth-child(5) {
+                margin-top: 40px;
+
+                p:nth-child(2) {
+                    background-color: $charcoal;
+                    color: $white;
+                    font-size: rem-calc(10.75);
+                    font-weight: 400;
+                    padding: 20px 10px;
+                }
+            }
+        }
+    }
+}
