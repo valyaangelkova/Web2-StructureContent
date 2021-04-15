@@ -86,6 +86,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero2\/soup.jpg" : {
+      "ft" : 16384,
+      "iS" : 362115,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero2\/soup.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/new\/breadmaking.jpg" : {
       "ft" : 16384,
       "iS" : 68362,
@@ -112,12 +125,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/new\/herbs ans spices.jpg" : {
+    "\/deploy\/img\/new\/herbs and spices.jpg" : {
       "ft" : 16384,
       "iS" : 84456,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/new\/herbs ans spices.jpg",
+      "oAP" : "\/deploy\/img\/new\/herbs and spices.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
