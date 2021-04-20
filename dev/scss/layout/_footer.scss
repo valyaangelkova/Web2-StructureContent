@@ -9,6 +9,8 @@ footer{
 
       @include md {grid-template-columns: 32px auto 32px
       }
+      @include lg {grid-template-columns: 236px auto 236px
+      }
      >div{
         grid-area: footer;
     } 

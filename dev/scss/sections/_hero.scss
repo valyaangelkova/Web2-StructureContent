@@ -6,8 +6,16 @@
     grid-template-columns: 0px auto 0px;
     grid-template-areas:". hero .";
 
-    
+    @include md {grid-template-columns: 32px auto 32px
+    }
+    @include lg {grid-template-columns: 236px auto 236px
+    }
      >div{
+        display: grid;
+        grid-template-columns: 0px auto 0px;
+        grid-template-areas:". hero .";
+    
+
         grid-area: hero;
      }
 }

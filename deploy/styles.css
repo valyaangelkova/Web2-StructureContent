@@ -437,6 +437,11 @@ header {
     grid-template-columns: 32px auto 32px;
   }
 }
+@media (min-width: 992px) {
+  header {
+    grid-template-columns: 236px auto 236px;
+  }
+}
 header > div {
   grid-area: header;
 }
@@ -452,6 +457,11 @@ footer {
 @media (min-width: 768px) {
   footer {
     grid-template-columns: 32px auto 32px;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    grid-template-columns: 236px auto 236px;
   }
 }
 footer > div {
@@ -475,7 +485,20 @@ footer > div {
   grid-template-columns: 0px auto 0px;
   grid-template-areas: ". hero .";
 }
+@media (min-width: 768px) {
+  #hero {
+    grid-template-columns: 32px auto 32px;
+  }
+}
+@media (min-width: 992px) {
+  #hero {
+    grid-template-columns: 236px auto 236px;
+  }
+}
 #hero > div {
+  display: grid;
+  grid-template-columns: 0px auto 0px;
+  grid-template-areas: ". hero .";
   grid-area: hero;
 }
 
@@ -490,6 +513,11 @@ footer > div {
 @media (min-width: 768px) {
   #hero2 {
     grid-template-columns: 32px auto 32px;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 {
+    grid-template-columns: 236px auto 236px;
   }
 }
 #hero2 > div {
@@ -509,6 +537,11 @@ section {
     grid-template-columns: 32px auto 32px;
   }
 }
+@media (min-width: 992px) {
+  section {
+    grid-template-columns: 236px auto 236px;
+  }
+}
 section > div {
   grid-area: search;
 }
@@ -526,6 +559,11 @@ section > div {
     grid-template-columns: 32px auto 32px;
   }
 }
+@media (min-width: 992px) {
+  #planning {
+    grid-template-columns: 236px auto 236px;
+  }
+}
 #planning > div {
   grid-area: planning;
 }
@@ -541,6 +579,11 @@ section > div {
 @media (min-width: 768px) {
   #new {
     grid-template-columns: 32px auto 32px;
+  }
+}
+@media (min-width: 992px) {
+  #new {
+    grid-template-columns: 236px auto 236px;
   }
 }
 #new > div {
