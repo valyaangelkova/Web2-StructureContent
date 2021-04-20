@@ -456,33 +456,9 @@ header > div {
 /* =============
     Hero
 ============= */
-#hero {
-  align-items: center;
-  background-color: #e54f30;
-  display: flex;
-  justify-content: center;
-}
-#hero div {
-  text-align: center;
-}
-#hero div h1 {
-  color: #fff;
-  font-size: 1.5625rem;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-#hero div p {
-  color: #fff;
-  font-weight: 300;
-}
-
 /* =============
    Hero2
 ============= */
-#hero2 {
-  background-color: aqua;
-}
-
 /* =============
    Search
 ============= */
