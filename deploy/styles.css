@@ -444,6 +444,20 @@ header > div {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+@media (min-width: 768px) {
+  footer {
+    grid-template-columns: 32px auto 32px;
+  }
+}
+footer > div {
+  grid-area: footer;
+}
+
 /*
 @import "sections/_section-1";
 @import "sections/_section-2";
@@ -456,19 +470,79 @@ header > div {
 /* =============
     Hero
 ============= */
+#hero {
+  display: grid;
+  grid-template-columns: 0px auto 0px;
+  grid-template-areas: ". hero .";
+}
+#hero > div {
+  grid-area: hero;
+}
+
 /* =============
    Hero2
 ============= */
+#hero2 {
+  display: grid;
+  grid-template-columns: 0px auto 0px;
+  grid-template-areas: ". hero2 .";
+}
+@media (min-width: 768px) {
+  #hero2 {
+    grid-template-columns: 32px auto 32px;
+  }
+}
+#hero2 > div {
+  grid-area: hero2;
+}
+
 /* =============
    Search
 ============= */
+section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: 32px auto 32px;
+  }
+}
+section > div {
+  grid-area: search;
+}
+
 /* =============
     Planning
 ============= */
 #planning {
-  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ".planning.";
+}
+@media (min-width: 768px) {
+  #planning {
+    grid-template-columns: 32px auto 32px;
+  }
+}
+#planning > div {
+  grid-area: planning;
 }
 
 /* =============
     New
 ============= */
+#new {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". new .";
+}
+@media (min-width: 768px) {
+  #new {
+    grid-template-columns: 32px auto 32px;
+  }
+}
+#new > div {
+  grid-area: new;
+}

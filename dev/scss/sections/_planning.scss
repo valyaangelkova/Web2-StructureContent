@@ -2,5 +2,15 @@
     Planning
 ============= */
 #planning {
-    background-color: blueviolet;
+   
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas:".planning.";
+
+        @include md {grid-template-columns: 32px auto 32px
+        }
+     >div{
+        grid-area: planning;
+    }
+  
 }
