@@ -6,9 +6,9 @@
     grid-template-columns: 0px auto 0px;
     grid-template-areas:". hero2 .";
 
-      @include md {grid-template-columns: 32px auto 32px
+      @include md {grid-template-columns: 0px auto 0px
       }
-      @include lg {grid-template-columns: 236px auto 236px
+      @include lg {grid-template-columns: 0px auto 0px
       }
      >div{
         grid-area: hero2;
