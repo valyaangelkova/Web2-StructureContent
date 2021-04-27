@@ -2,15 +2,31 @@
     New
 ============= */ 
 #new{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas:". new .";
 
-      @include md {grid-template-columns: 32px auto 32px
-      }
-      @include lg {grid-template-columns: 236px auto 236px
-      }
-     >div{
-        grid-area: new;
-    }
+   ul{
+       li{
+           img{
+               width: 100%;
+
+           }
+           section{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas:".new-content.";
+            >div{
+                grid-area: new-content; 
+                border: 1px solid red;
+               
+
+               }
+           }
+       }
+   }
+
+    //   @include md {grid-template-columns: 32px auto 32px
+    //   }
+    //   @include lg {grid-template-columns: 236px auto 236px
+    //   }
+    
+
 }
