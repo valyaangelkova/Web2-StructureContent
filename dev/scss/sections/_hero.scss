@@ -11,7 +11,7 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
-            background-color: blueviolet;
+            // background-color: blueviolet;
 
             a {
                 grid-area: hero-content;

@@ -1,20 +1,22 @@
 /* =============
     Header
 ============= */
-header{
+header {
     display: grid;
 
     grid-template-columns: 16px auto 16px;
-    grid-template-areas:". header .";
+    grid-template-areas: ". header .";
 
+    @include lg {
+        grid-template-columns: аuto 80% auto;
+    }
 
-      @include md {grid-template-columns: 32px auto 32px
-      }
-      @include lg {grid-template-columns: 236px auto 236px
-      }
-     >div{
+    >div {
         grid-area: header;
-    } 
- 
-} 
 
+        img{
+            width: 100px;
+        }
+    }
+
+}

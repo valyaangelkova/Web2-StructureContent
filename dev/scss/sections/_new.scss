@@ -16,6 +16,12 @@
             >div{
                 grid-area: new-content; 
                 border: 1px solid red;
+
+            //     @include md{
+            //         display: grid;
+            // grid-template-columns: 16px auto 16px;
+            // grid-template-areas:".new-content.";
+            //     }
                
 
                }
