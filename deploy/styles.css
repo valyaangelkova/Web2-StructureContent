@@ -477,25 +477,6 @@ footer > div {
 /* =============
    Hero2
 ============= */
-#hero2 {
-  display: grid;
-  grid-template-columns: 0px auto 0px;
-  grid-template-areas: ". hero2 .";
-}
-@media (min-width: 768px) {
-  #hero2 {
-    grid-template-columns: 0px auto 0px;
-  }
-}
-@media (min-width: 992px) {
-  #hero2 {
-    grid-template-columns: 0px auto 0px;
-  }
-}
-#hero2 > div {
-  grid-area: hero2;
-}
-
 /* =============
    Search
 ============= */
@@ -521,23 +502,14 @@ section > div {
 /* =============
     Planning
 ============= */
-#planning {
+#planning ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".planning.";
 }
-@media (min-width: 768px) {
-  #planning {
-    grid-template-columns: 32px auto 32px;
-  }
-}
-@media (min-width: 992px) {
-  #planning {
-    grid-template-columns: 236px auto 236px;
-  }
-}
-#planning > div {
+#planning ul li > div {
   grid-area: planning;
+  border: 1px solid red;
 }
 
 /* =============
