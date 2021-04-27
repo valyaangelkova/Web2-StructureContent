@@ -2,6 +2,18 @@
    Hero2
 ============= */
 #hero2 { 
+   ul{
+      display: grid;
+      li{
+         img{
+            // width: 100%;
+         }
+
+      }
+      #h2-3{
+         display: none;
+      } 
+   }
    //  display: grid;
    //  grid-template-columns: 0px auto 0px;
    //  grid-template-areas:". hero2 .";

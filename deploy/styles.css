@@ -477,6 +477,13 @@ footer > div {
 /* =============
    Hero2
 ============= */
+#hero2 ul {
+  display: grid;
+}
+#hero2 ul #h2-3 {
+  display: none;
+}
+
 /* =============
    Search
 ============= */
