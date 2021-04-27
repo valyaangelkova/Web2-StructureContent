@@ -1,21 +1,24 @@
 /* =============
     Hero
 ============= */
-#hero{
-    display: grid;
-    grid-template-columns: 0px auto 0px;
-    grid-template-areas:". hero .";
-
-    @include md {grid-template-columns: 32px auto 32px
+#hero {
+    img {
+        width: 100%;
     }
-    @include lg {grid-template-columns: 236px auto 236px
-    }
-     >div{
-        display: grid;
-        grid-template-columns: 0px auto 0px;
-        grid-template-areas:". hero .";
-    
 
-        grid-area: hero;
-     }
+    ul {
+        li {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero-content .";
+            background-color: blueviolet;
+
+            a {
+                grid-area: hero-content;
+
+            }
+
+        }
+    }
+
 }
