@@ -3,16 +3,38 @@
 ============= */
 #planning {
     ul{
+        display: grid;
+      
+        gap: 16px;
+        
+                @include md{ 
+            display: grid;
+            grid-template-columns: 50% auto;
+            
+        }
         li{
             display: grid;
             grid-template-columns: 16px auto 16px;
+            
             grid-template-areas:".planning.";
+          
+            @include xl{
+                grid-template-columns:  auto 460px 16px;
+            }
+            
+
             >div{
                 grid-area: planning; 
-                border: 1px solid red;
+                // border: 1px solid red;
+                background-color: $earth;
 
             }
+            
 
+        }
+        #planning-2{
+            @include xl{
+                grid-template-columns:  16px 460px auto;}
         }
     }
    

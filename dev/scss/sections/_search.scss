@@ -9,7 +9,14 @@
     @include lg {grid-template-columns: auto 80% auto
       }
       >div{
-         grid-area: search;
+         grid-area: search; 
+         form{ 
+            input{}
+         button{
+            background-color: $lime;
+         }
+         }
+         
        }
       }
      

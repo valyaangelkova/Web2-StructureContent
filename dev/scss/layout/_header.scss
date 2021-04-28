@@ -6,12 +6,14 @@ header {
 
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
-
+    background-color: $earth;
     @include lg {
         grid-template-columns: аuto 80% auto;
+    
     }
 
     >div {
+      
         grid-area: header;
 
         img{

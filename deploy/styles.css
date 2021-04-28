@@ -413,6 +413,7 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
+  background-color: #A27C64;
 }
 @media (min-width: 992px) {
   header {
@@ -433,6 +434,7 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".footer.";
+  background-color: #A27C64;
 }
 @media (min-width: 768px) {
   footer {
@@ -446,7 +448,6 @@ footer {
 }
 footer > div {
   grid-area: footer;
-  border: orangered;
 }
 
 /*
@@ -464,13 +465,42 @@ footer > div {
 #hero img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 992px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
 #hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
+  background-color: #B3C32E;
+}
+@media (min-width: 1200px) {
+  #hero ul li {
+    grid-template-columns: auto 460px 16px;
+  }
 }
 #hero ul li a {
   grid-area: hero-content;
+}
+#hero ul #part1 {
+  background-color: #B3C32E;
+}
+#hero ul #part2 {
+  background-color: #D8E37C;
+}
+@media (min-width: 1200px) {
+  #hero ul #part2 {
+    grid-template-columns: 16px 460px auto;
+  }
 }
 
 /* =============
@@ -479,11 +509,26 @@ footer > div {
 #hero2 ul {
   display: grid;
 }
+@media (min-width: 768px) {
+  #hero2 ul {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 ul {
+    grid-template-columns: 40% auto;
+  }
+}
 #hero2 ul li img {
   width: 100%;
 }
 #hero2 ul #h2-3 {
   display: none;
+}
+@media (min-width: 1200px) {
+  #hero2 ul #h2-3 {
+    display: grid;
+  }
 }
 
 /* =============
@@ -502,18 +547,41 @@ footer > div {
 #search > div {
   grid-area: search;
 }
+#search > div form button {
+  background-color: #B3C32E;
+}
 
 /* =============
     Planning
 ============= */
+#planning ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #planning ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
 #planning ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".planning.";
 }
+@media (min-width: 1200px) {
+  #planning ul li {
+    grid-template-columns: auto 460px 16px;
+  }
+}
 #planning ul li > div {
   grid-area: planning;
-  border: 1px solid red;
+  background-color: #A27C64;
+}
+@media (min-width: 1200px) {
+  #planning ul #planning-2 {
+    grid-template-columns: 16px 460px auto;
+  }
 }
 
 /* =============

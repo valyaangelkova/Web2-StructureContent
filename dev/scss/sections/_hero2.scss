@@ -3,7 +3,16 @@
 ============= */
 #hero2 { 
    ul{
+      
       display: grid;
+      @include md{
+         grid-template-columns: 50% auto;
+
+      }
+      @include lg{
+         grid-template-columns: 40% auto;
+
+      }
       li{
          img{
             width: 100%;
@@ -12,6 +21,9 @@
       }
       #h2-3{
          display: none;
+         @include xl{ 
+            display: grid;
+         }
       } 
    }
    //  display: grid;
