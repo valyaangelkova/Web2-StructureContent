@@ -6,13 +6,13 @@ footer{
    
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas:". footer .";
+    grid-template-areas:".footer.";
    
 
-    //   @include md {grid-template-columns: 32px auto 32px
-    //   }
-    //   @include lg {grid-template-columns: 236px auto 236px
-    //   }
+      @include md {grid-template-columns: auto 80% auto
+      }
+      @include lg {grid-template-columns: auto 80% auto
+      }
      >div{
         grid-area: footer;
         border: orangered;

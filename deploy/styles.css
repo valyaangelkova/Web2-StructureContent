@@ -432,7 +432,17 @@ header > div img {
 footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
+  grid-template-areas: ".footer.";
+}
+@media (min-width: 768px) {
+  footer {
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    grid-template-columns: auto 80% auto;
+  }
 }
 footer > div {
   grid-area: footer;
@@ -486,7 +496,7 @@ footer > div {
 }
 @media (min-width: 992px) {
   #search {
-    grid-template-columns: аuto 80% auto;
+    grid-template-columns: auto 80% auto;
   }
 }
 #search > div {

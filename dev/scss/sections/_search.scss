@@ -1,16 +1,16 @@
 /* =============
    Search
 ============= */
-#search {
-   display: grid;
-   grid-template-columns: 16px auto 16px;
-   grid-template-areas: ". search .";
+  #search {
+     display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas:". search .";
 
-   @include lg {
-      grid-template-columns: аuto 80% auto;
-   }
-
-   >div {
-      grid-area: search;
-   }
-}
+    @include lg {grid-template-columns: auto 80% auto
+      }
+      >div{
+         grid-area: search;
+       }
+      }
+     
+    
