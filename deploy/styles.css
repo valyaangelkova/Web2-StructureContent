@@ -600,15 +600,36 @@ footer > div {
 /* =============
     New
 ============= */
-#new ul li img {
+@media (min-width: 768px) {
+  #new {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". new .";
+  }
+}
+@media (min-width: 768px) {
+  #new > div {
+    grid-area: "new";
+  }
+}
+@media (min-width: 768px) {
+  #new > div ul {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+  }
+}
+#new > div ul li {
+  background-color: #BFB9B9;
+}
+#new > div ul li img {
   width: 100%;
 }
-#new ul li section {
+#new > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".new-content.";
 }
-#new ul li section > div {
+#new > div ul li section > div {
   grid-area: new-content;
   border: 1px solid red;
 }
