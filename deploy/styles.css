@@ -446,8 +446,23 @@ footer {
     grid-template-columns: auto 80% auto;
   }
 }
-footer > div {
-  grid-area: footer;
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "f-1 f-1" "f-2 f-3";
+  }
+}
+#f-1 {
+  grid-area: f-1;
+}
+
+#f-2 {
+  grid-area: f-2;
+}
+
+#f-3 {
+  grid-area: f-3;
 }
 
 /*
@@ -506,6 +521,13 @@ footer > div {
 /* =============
    Hero2
 ============= */
+@media (min-width: 1200px) {
+  #hero2 {
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    grid-template-areas: ".hero2.";
+  }
+}
 #hero2 ul {
   display: grid;
 }
@@ -521,6 +543,7 @@ footer > div {
 }
 @media (min-width: 1200px) {
   #hero2 ul {
+    grid-area: hero2;
     grid-template-columns: 65% auto;
     grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
   }
@@ -609,13 +632,12 @@ footer > div {
 }
 @media (min-width: 1200px) {
   #new {
-    display: grid;
-    grid-template-columns: auto 1000px auto;
+    grid-template-columns: auto 1200px auto;
   }
 }
 @media (min-width: 768px) {
   #new > div {
-    grid-area: "new";
+    grid-area: new;
   }
 }
 @media (min-width: 768px) {

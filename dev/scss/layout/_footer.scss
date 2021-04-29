@@ -14,8 +14,31 @@ footer{
       @include lg {grid-template-columns: auto 80% auto
       }
      >div{
-        grid-area: footer;
+        // grid-area: footer;
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "f-1 f-1" "f-2 f-3";
+            
+        }
+        article{
+
+        }
+
+        
         // border: orangered;
     } 
  
 } 
+#f-1{
+    grid-area: f-1;
+
+}
+#f-2{
+    grid-area: f-2;
+
+}
+#f-3{
+    grid-area: f-3;
+
+}

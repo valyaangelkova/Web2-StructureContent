@@ -10,8 +10,8 @@
     
     }
     @include xl{ 
-        display: grid;
-        grid-template-columns: auto 1000px auto;
+        // display: grid;
+        grid-template-columns: auto 1200px auto;
         // grid-template-areas: ". new .";
     }
 
@@ -19,7 +19,7 @@
    
 
     @include md{
-        grid-area: "new";
+        grid-area: new;
     }
     ul{
         @include md{ 
