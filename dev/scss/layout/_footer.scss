@@ -44,11 +44,21 @@ footer{
         }
 
         article{
+            h1{ color: $earth-dark;}
             button{
                 background: $lime;
+                color: white;
             }
             input{
                 background-color: white;
+                color: $basil;
+            }
+            li{
+                color: $basil}
+                
+            }
+            .icon{
+                color: $lime;
             }
 
         }
@@ -72,4 +82,3 @@ footer{
 #f-3{
     grid-area: f-3;
 } 
-}

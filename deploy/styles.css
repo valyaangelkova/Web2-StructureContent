@@ -457,21 +457,35 @@ footer > div {
     grid-template-areas: "f-1 f-2 f-3";
   }
 }
+footer > div article h1 {
+  color: #714E38;
+}
 footer > div article button {
   background: #B3C32E;
+  color: white;
 }
 footer > div article input {
   background-color: white;
+  color: #72AF3A;
 }
+footer > div article li {
+  color: #72AF3A;
+}
+footer > div .icon {
+  color: #B3C32E;
+}
+
 @media (min-width: 768px) {
-  footer #f-1 {
+  #f-1 {
     grid-area: f-1;
   }
 }
-footer #f-2 {
+
+#f-2 {
   grid-area: f-2;
 }
-footer #f-3 {
+
+#f-3 {
   grid-area: f-3;
 }
 
@@ -518,9 +532,11 @@ footer #f-3 {
 }
 #hero ul #part1 {
   background-color: #B3C32E;
+  color: white;
 }
 #hero ul #part2 {
   background-color: #D8E37C;
+  color: white;
 }
 @media (min-width: 1200px) {
   #hero ul #part2 {
@@ -593,6 +609,10 @@ footer #f-3 {
 #search > div {
   grid-area: search;
 }
+#search > div form input {
+  color: #72AF3A;
+  background-color: white;
+}
 #search > div form button {
   background-color: #B3C32E;
 }
@@ -623,6 +643,11 @@ footer #f-3 {
 #planning ul li > div {
   grid-area: planning;
   background-color: #A27C64;
+  color: white;
+}
+#planning ul li > div button {
+  background-color: #B3C32E;
+  color: white;
 }
 @media (min-width: 1200px) {
   #planning ul #planning-2 {
@@ -682,6 +707,7 @@ footer #f-3 {
 }
 #new > div ul li section > div button {
   background-color: #B3C32E;
+  color: white;
 }
 @media (min-width: 768px) {
   #new > div ul #n1 {

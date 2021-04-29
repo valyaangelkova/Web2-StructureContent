@@ -37,10 +37,11 @@
         }
         #part1 {
             background-color: $lime;
-           
+           color: white;
         }
         #part2 {
             background-color: $lime-light;
+            color: white;
             @include xl{
                 grid-template-columns:  16px 460px auto;
             }
