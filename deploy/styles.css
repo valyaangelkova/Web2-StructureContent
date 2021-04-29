@@ -457,6 +457,12 @@ footer > div {
     grid-template-areas: "f-1 f-2 f-3";
   }
 }
+footer > div article button {
+  background: #B3C32E;
+}
+footer > div article input {
+  background-color: white;
+}
 @media (min-width: 768px) {
   footer #f-1 {
     grid-area: f-1;
