@@ -8,19 +8,41 @@ footer{
     grid-template-columns: 16px auto 16px;
     grid-template-areas:".footer.";
    background-color: $earth;
+  
+   @include xl{
+    // display: grid;
+    grid-template-columns: auto 1200px auto;
+    // grid-template-areas:".footer.";
+    }
+ 
 
-      @include md {grid-template-columns: auto 80% auto
-      }
-      @include lg {grid-template-columns: auto 80% auto
-      }
+    //   @include md {grid-template-columns: auto 80% auto
+    //   }
+    //   @include xl {
+    //       grid-template-columns: auto 1200px auto;
+    //       grid-template-areas: ". footer.";
+    //   }
      >div{
-        // grid-area: footer;
+        
+         
+        grid-area: footer;
         @include md{
             display: grid;
             grid-template-columns: 50% auto;
-            grid-template-areas: "f-1 f-1" "f-2 f-3";
+            grid-template-areas:
+             "f-1 f-2" 
+             "f-1 f-3";
             
         }
+        
+        @include lg{
+            
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+             "f-1 f-2 f-3";
+            
+        }
+
         article{
 
         }
@@ -29,9 +51,12 @@ footer{
         // border: orangered;
     } 
  
-} 
+ 
 #f-1{
-    grid-area: f-1;
+    @include md{ grid-area: f-1 ;}
+    
+
+    
 
 }
 #f-2{
@@ -40,5 +65,5 @@ footer{
 }
 #f-3{
     grid-area: f-3;
-
+} 
 }

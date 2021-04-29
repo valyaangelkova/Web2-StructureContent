@@ -436,32 +436,36 @@ footer {
   grid-template-areas: ".footer.";
   background-color: #A27C64;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   footer {
-    grid-template-columns: auto 80% auto;
+    grid-template-columns: auto 1200px auto;
   }
 }
-@media (min-width: 992px) {
-  footer {
-    grid-template-columns: auto 80% auto;
-  }
+footer > div {
+  grid-area: footer;
 }
 @media (min-width: 768px) {
   footer > div {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "f-1 f-1" "f-2 f-3";
+    grid-template-areas: "f-1 f-2" "f-1 f-3";
   }
 }
-#f-1 {
-  grid-area: f-1;
+@media (min-width: 992px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f-1 f-2 f-3";
+  }
 }
-
-#f-2 {
+@media (min-width: 768px) {
+  footer #f-1 {
+    grid-area: f-1;
+  }
+}
+footer #f-2 {
   grid-area: f-2;
 }
-
-#f-3 {
+footer #f-3 {
   grid-area: f-3;
 }
 
