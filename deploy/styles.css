@@ -648,6 +648,9 @@ footer > div {
   grid-area: new-content;
   border: 1px solid red;
 }
+#new > div ul li section > div button {
+  background-color: #B3C32E;
+}
 @media (min-width: 768px) {
   #new > div ul #n1 {
     grid-area: n1;

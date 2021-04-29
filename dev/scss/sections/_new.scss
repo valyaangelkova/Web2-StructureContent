@@ -53,6 +53,9 @@
              >div{
                  grid-area: new-content; 
                  border: 1px solid red;
+                 button{
+                     background-color: $lime;
+                 }
  
              //     @include md{
              //         display: grid;
