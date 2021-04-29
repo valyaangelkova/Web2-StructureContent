@@ -615,7 +615,16 @@ footer > div {
 @media (min-width: 768px) {
   #new > div ul {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "n1 n1 n2 n2" "n3 n3 n4 n4" ". n5 n5.";
+    gap: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #new > div ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
   }
 }
 #new > div ul li {
@@ -632,4 +641,29 @@ footer > div {
 #new > div ul li section > div {
   grid-area: new-content;
   border: 1px solid red;
+}
+@media (min-width: 768px) {
+  #new > div ul #n1 {
+    grid-area: n1;
+  }
+}
+@media (min-width: 768px) {
+  #new > div ul #n2 {
+    grid-area: n2;
+  }
+}
+@media (min-width: 768px) {
+  #new > div ul #n3 {
+    grid-area: n3;
+  }
+}
+@media (min-width: 768px) {
+  #new > div ul #n4 {
+    grid-area: n4;
+  }
+}
+@media (min-width: 768px) {
+  #new > div ul #n5 {
+    grid-area: n5;
+  }
 }

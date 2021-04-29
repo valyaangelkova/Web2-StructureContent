@@ -14,7 +14,20 @@
     ul{
         @include md{ 
             display: grid;
-            grid-template-columns: repeat(4 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "n1 n1 n2 n2"
+            "n3 n3 n4 n4"
+            ". n5 n5.";
+            gap: 16px;
+        
+        }
+        @include lg{ 
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            "n1 n1 n2 n2 n3 n3"
+            ". n4 n4 n5 n5 .";
         }
         li{
             background-color: $dust-light;
@@ -39,6 +52,32 @@
                 
  
                 }
+            }
+
+        }
+        #n1{
+            @include md{ 
+                grid-area: n1;
+            }
+        }
+        #n2{
+            @include md{ 
+                grid-area: n2;
+            }
+        }
+        #n3{
+            @include md{ 
+                grid-area: n3;
+            }
+        }
+        #n4{
+            @include md{ 
+                grid-area: n4;
+            }
+        }
+        #n5{
+            @include md{ 
+                grid-area: n5;
             }
         }
     }
