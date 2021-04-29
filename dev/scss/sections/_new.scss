@@ -2,12 +2,22 @@
     New
 ============= */ 
 #new{
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". new .";
+    
     }
+    @include xl{ 
+        display: grid;
+        grid-template-columns: auto 1000px auto;
+        // grid-template-areas: ". new .";
+    }
+
 >div{
+   
+
     @include md{
         grid-area: "new";
     }
