@@ -530,17 +530,17 @@ footer > div .icon {
 }
 @media (min-width: 768px) {
   #hero #hero-img {
-    height: 496px;
+    height: 422px;
   }
 }
 @media (min-width: 992px) {
   #hero #hero-img {
-    height: 633px;
+    height: 561px;
   }
 }
 @media (min-width: 1200px) {
   #hero #hero-img {
-    height: 945px;
+    height: 873px;
   }
 }
 @media (min-width: 768px) {
@@ -615,14 +615,39 @@ footer > div .icon {
 }
 #hero2 ul li {
   background-image: url("../img/hero2/left2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 361px;
   background-image: url("../img/hero2/right2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 361px;
   background-image: url("../img/hero2/soup2.jpg");
 }
-#hero2 #h2-1 {
-  grid-area: h2-1;
+@media (min-width: 768px) {
+  #hero2 ul li {
+    height: 594px;
+  }
 }
-#hero2 #h2-2 {
-  grid-area: h2-2;
+@media (min-width: 992px) {
+  #hero2 ul li {
+    height: 626px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  #hero2 ul li {
+    height: 594px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 #h2-2 {
+    grid-area: h2-2;
+  }
 }
 #hero2 #h2-3 {
   display: none;
