@@ -4,7 +4,10 @@
 #hero {
     // img {
     //     width: 100%;
-    background-image: url("../img/hero/hero.jpg");
+    
+
+    #hero-img{
+        background-image: url("../img/hero/hero.jpg");
     background-position: center;
     background-size: cover;
     height: 252px;
@@ -19,6 +22,8 @@
     @include xl { 
         height: 945px;
     }
+    }
+    
     ul {
         @include md {
             display: grid;
