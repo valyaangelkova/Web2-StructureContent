@@ -522,8 +522,26 @@ footer > div .icon {
 /* =============
     Hero
 ============= */
-#hero img {
-  width: 100%;
+#hero {
+  background-image: url("../img/hero/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 252px;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 496px;
+  }
+}
+@media (min-width: 992px) {
+  #hero {
+    height: 633px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    height: 945px;
+  }
 }
 @media (min-width: 768px) {
   #hero ul {
@@ -551,16 +569,16 @@ footer > div .icon {
 #hero ul li a {
   grid-area: hero-content;
 }
-#hero ul #part1 {
+#hero #part1 {
   background-color: #B3C32E;
   color: white;
 }
-#hero ul #part2 {
+#hero #part2 {
   background-color: #D8E37C;
   color: white;
 }
 @media (min-width: 1200px) {
-  #hero ul #part2 {
+  #hero #part2 {
     grid-template-columns: 16px 460px auto;
   }
 }
@@ -595,20 +613,22 @@ footer > div .icon {
     grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
   }
 }
-#hero2 ul li img {
-  width: 100%;
+#hero2 ul li {
+  background-image: url("../img/hero2/left2.jpg");
+  background-image: url("../img/hero2/right2.jpg");
+  background-image: url("../img/hero2/soup2.jpg");
 }
-#hero2 ul #h2-1 {
+#hero2 #h2-1 {
   grid-area: h2-1;
 }
-#hero2 ul #h2-2 {
+#hero2 #h2-2 {
   grid-area: h2-2;
 }
-#hero2 ul #h2-3 {
+#hero2 #h2-3 {
   display: none;
 }
 @media (min-width: 1200px) {
-  #hero2 ul #h2-3 {
+  #hero2 #h2-3 {
     display: list-item;
     grid-area: h2-3;
   }

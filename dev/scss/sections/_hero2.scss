@@ -25,8 +25,12 @@
           "h2-1 h2-3";
        }
       li{
-         img{
-            width: 100%;
+         // img{
+         //    width: 100%; 
+         background-image: url("../img/hero2/left2.jpg");
+         background-image: url("../img/hero2/right2.jpg");
+         background-image: url("../img/hero2/soup2.jpg");
+
          }
 
       }
@@ -48,7 +52,7 @@
          
          }
       } 
-   }
+   
    //  display: grid;
    //  grid-template-columns: 0px auto 0px;
    //  grid-template-areas:". hero2 .";

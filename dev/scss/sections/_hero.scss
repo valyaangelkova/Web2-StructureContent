@@ -2,10 +2,23 @@
     Hero
 ============= */
 #hero {
-    img {
-        width: 100%;
-    }
+    // img {
+    //     width: 100%;
+    background-image: url("../img/hero/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 252px;
 
+    @include md { 
+        height: 496px;
+    }
+    
+    @include lg { 
+        height: 633px;
+    }
+    @include xl { 
+        height: 945px;
+    }
     ul {
         @include md {
             display: grid;
@@ -17,7 +30,7 @@
             display: grid;
             grid-template-columns: 50% auto;
         }
-        li {
+        li{
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero-content .";
@@ -32,6 +45,8 @@
                 grid-area: hero-content;
 
             }
+        }
+           
            
 
         }
@@ -48,4 +63,3 @@
         }
     }
 
-}
