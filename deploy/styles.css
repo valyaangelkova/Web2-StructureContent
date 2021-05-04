@@ -488,6 +488,27 @@ footer > div .icon {
 #f-3 {
   grid-area: f-3;
 }
+#f-3  ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "1 2 3 4";
+}
+
+#yt {
+  grid-area: 1;
+}
+
+#tw {
+  grid-area: 2;
+}
+
+#in {
+  grid-area: 3;
+}
+
+#fb {
+  grid-area: 4;
+}
 
 /*
 @import "sections/_section-1";
@@ -626,7 +647,6 @@ footer > div .icon {
 }
 @media (min-width: 768px) {
   #planning ul {
-    display: grid;
     grid-template-columns: 50% auto;
   }
 }

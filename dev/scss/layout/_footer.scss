@@ -81,4 +81,28 @@ footer{
 }
 #f-3{
     grid-area: f-3;
+     ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "1 2 3 4" ;
+
+    
+    }
+    // @include lg{ 
+    //     display: grid;
+    //     grid-template-columns: auto auto 16px;
+    //     grid-template-areas: ". f-3 .";
+    // }
+}
+#yt{
+    grid-area: 1;
 } 
+#tw{
+    grid-area: 2;
+}
+#in{
+    grid-area: 3;
+}
+#fb{
+    grid-area: 4;
+}
