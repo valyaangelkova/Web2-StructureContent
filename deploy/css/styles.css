@@ -661,18 +661,27 @@ footer > div .icon {
 /* =============
     Planning
 ============= */
+@media (min-width: 768px) {
+  #planning {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ".planning.";
+  }
+}
 #planning ul {
   display: grid;
   gap: 16px;
 }
 @media (min-width: 768px) {
   #planning ul {
+    grid-area: planning;
     grid-template-columns: 50% auto;
   }
 }
 #planning ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
+  background-color: #A27C64;
   grid-template-areas: ".planning.";
 }
 @media (min-width: 1200px) {
@@ -682,7 +691,6 @@ footer > div .icon {
 }
 #planning ul li > div {
   grid-area: planning;
-  background-color: #A27C64;
   color: white;
 }
 #planning ul li > div button {
