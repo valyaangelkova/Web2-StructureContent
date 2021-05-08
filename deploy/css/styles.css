@@ -353,6 +353,10 @@ template {
 /* =============
     Base
 ============= */
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -669,9 +673,29 @@ footer > div .icon {
 #search > div form input {
   color: #72AF3A;
   background-color: white;
+  font-size: 0.875rem;
+  font-weight: 300;
 }
-#search > div form button {
+#search > div form input ::placeholder {
+  color: #72AF3A;
+  border: none;
+}
+@media (min-width: 768px) {
+  #search > div form input {
+    font-size: 1.875rem;
+    font-weight: 200;
+  }
+}
+@media (min-width: 992px) {
+  #search > div form input {
+    font-size: 2.1875rem;
+    font-weight: 200;
+  }
+}
+#search > div form input button {
   background-color: #B3C32E;
+  border: none;
+  border-radius: 5;
 }
 
 /* =============
