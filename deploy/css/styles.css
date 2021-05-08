@@ -711,10 +711,29 @@ ul li a {
   background-color: #B3C32E;
   color: white;
 }
+#planning ul li aside div {
+  background-position: center;
+  background-size: cover;
+  border: 4px white solid;
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #planning ul li aside div {
+    height: 113px;
+    width: 113px;
+  }
+}
 @media (min-width: 1200px) {
-  #planning ul #planning-2 {
+  #planning #planning-2 {
     grid-template-columns: 16px 460px auto;
   }
+}
+#planning #planning-left {
+  background-image: url(../img/hero/planning_left.jpg);
+  background-position: -35px 0px;
+  background-size: cover;
 }
 
 /* =============

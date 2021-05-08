@@ -98,6 +98,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero\/planning_left.jpg" : {
+      "ft" : 16384,
+      "iS" : 65035,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/planning_left.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/hero\/planning-right.jpg" : {
+      "ft" : 16384,
+      "iS" : 0,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/planning-right.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero2\/left.jpg" : {
       "ft" : 16384,
       "iS" : 513763,

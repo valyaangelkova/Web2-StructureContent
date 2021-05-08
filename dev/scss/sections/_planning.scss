@@ -43,12 +43,34 @@
                 }
 
             }
+            aside{
+                div{
+                    background-position: center;
+                    background-size:cover;
+                    border: 4px white solid;
+                    height: 85px;
+                    width: 85px;
+                    border-radius: 100%;
+                    @include md{ 
+                        height:113px;
+                        width: 113px;
+                    }
+                  
+                }
+
+                }
+            }
             
 
         }
         #planning-2{
             @include xl{
                 grid-template-columns:  16px 460px auto;}
+        }
+        #planning-left{
+            background-image: url(../img/hero/planning_left.jpg);
+            background-position: -35px 0px;
+            background-size: cover;
         }
     }
    
@@ -60,4 +82,3 @@
         // }
     
   
-}
