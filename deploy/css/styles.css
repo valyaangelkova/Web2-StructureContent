@@ -735,6 +735,11 @@ ul li a {
   background-position: -35px 0px;
   background-size: cover;
 }
+#planning #planning-right {
+  background-image: url(../img/hero/planning-right.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
 /* =============
     New
