@@ -526,45 +526,42 @@ footer > div .icon {
   object-fit: cover;
   width: 100%;
 }
-
 @media (min-width: 768px) {
-  ul {
+  #hero ul {
     display: grid;
     grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 992px) {
-  ul {
+  #hero ul {
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
-ul li {
+#hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
   background-color: #B3C32E;
 }
 @media (min-width: 1200px) {
-  ul li {
+  #hero ul li {
     grid-template-columns: auto 460px 16px;
   }
 }
-ul li a {
+#hero ul li a {
   grid-area: hero-content;
 }
-
-#part1 {
+#hero #part1 {
   background-color: #B3C32E;
   color: white;
 }
-
-#part2 {
+#hero #part2 {
   background-color: #D8E37C;
   color: white;
 }
 @media (min-width: 1200px) {
-  #part2 {
+  #hero #part2 {
     grid-template-columns: 16px 460px auto;
   }
 }
@@ -572,6 +569,9 @@ ul li a {
 /* =============
    Hero2
 ============= */
+#hero2 {
+  display: grid;
+}
 @media (min-width: 1200px) {
   #hero2 {
     display: grid;
@@ -581,57 +581,42 @@ ul li a {
 }
 #hero2 ul {
   display: grid;
+  grid-template-rows: 360px 480px;
 }
 @media (min-width: 768px) {
   #hero2 ul {
     grid-template-columns: 50% auto;
+    grid-template-rows: 595px;
   }
 }
 @media (min-width: 992px) {
   #hero2 ul {
     grid-template-columns: 60% auto;
+    grid-template-rows: 625px;
   }
 }
 @media (min-width: 1200px) {
   #hero2 ul {
     grid-area: hero2;
     grid-template-columns: 65% auto;
+    grid-template-rows: 415px 415px;
     grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
   }
 }
 #hero2 ul li {
+  background-size: cover;
+  background-position: center;
+}
+#hero2 #h2-1 {
   background-image: url("../img/hero2/left2.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 361px;
-  background-image: url("../img/hero2/right2.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 361px;
-  background-image: url("../img/hero2/soup2.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 361px;
-}
-@media (min-width: 768px) {
-  #hero2 ul li {
-    height: 594px;
-  }
-}
-@media (min-width: 992px) {
-  #hero2 ul li {
-    height: 626px;
-  }
-}
-@media (min-width: 992px) and (min-width: 1200px) {
-  #hero2 ul li {
-    height: 594px;
-  }
 }
 @media (min-width: 1200px) {
   #hero2 #h2-1 {
     grid-area: h2-1;
   }
+}
+#hero2 #h2-2 {
+  background-image: url("../img/hero2/right2.jpg");
 }
 @media (min-width: 1200px) {
   #hero2 #h2-2 {
@@ -639,6 +624,7 @@ ul li a {
   }
 }
 #hero2 #h2-3 {
+  background-image: url("../img/hero2/soup2.jpg");
   display: none;
 }
 @media (min-width: 1200px) {
