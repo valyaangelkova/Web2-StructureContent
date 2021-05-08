@@ -354,7 +354,8 @@ template {
     Base
 ============= */
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Quattrocento", serif;
 }
 
 ul {
@@ -463,14 +464,28 @@ footer > div {
 }
 footer > div article h1 {
   color: #714E38;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+footer > div article h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+footer > div article h3 {
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 footer > div article button {
   background: #B3C32E;
   color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 footer > div article input {
   background-color: white;
   color: #72AF3A;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 footer > div article li {
   color: #72AF3A;
@@ -670,29 +685,37 @@ footer > div .icon {
 #search > div {
   grid-area: search;
 }
-#search > div form input {
-  color: #72AF3A;
-  background-color: white;
+#search > div form {
   font-size: 0.875rem;
   font-weight: 300;
 }
-#search > div form input ::placeholder {
+#search > div form input {
   color: #72AF3A;
-  border: none;
+  background-color: white;
+}
+#search > div form input::placeholder {
+  color: #72AF3A;
+  opacity: 1;
+}
+#search > div form input::placeholder::-ms-input-placeholder {
+  color: #72AF3A;
+}
+#search > div form input::placeholder::-ms-input-placeholder {
+  color: #72AF3A;
 }
 @media (min-width: 768px) {
-  #search > div form input {
+  #search > div form {
     font-size: 1.875rem;
     font-weight: 200;
   }
 }
 @media (min-width: 992px) {
-  #search > div form input {
+  #search > div form {
     font-size: 2.1875rem;
     font-weight: 200;
   }
 }
-#search > div form input button {
+#search > div form button {
   background-color: #B3C32E;
   border: none;
   border-radius: 5;
@@ -736,6 +759,23 @@ footer > div .icon {
 #planning ul li > div button {
   background-color: #B3C32E;
   color: white;
+  font-size: 0.875rem;
+  border: none;
+}
+#planning ul li > div h1 {
+  font-family: serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #planning ul li > div h1 {
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 992px) {
+  #planning ul li > div h1 {
+    font-size: 1.9375rem;
+  }
 }
 #planning ul li aside div {
   background-position: center;
@@ -770,6 +810,17 @@ footer > div .icon {
 /* =============
     New
 ============= */
+#new h1 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #72AF3A;
+}
+@media (min-width: 992px) {
+  #new h1 {
+    font-size: 2.3125rem;
+    font-weight: 200;
+  }
+}
 @media (min-width: 768px) {
   #new {
     display: grid;
@@ -820,6 +871,25 @@ footer > div .icon {
 #new > div ul li section > div button {
   background-color: #B3C32E;
   color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border: none;
+}
+#new > div ul li section > div h2 {
+  font-family: serif;
+  font-size: 1.6875rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+#new > div ul li section > div h4 {
+  font-family: serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+#new > div ul li section > div p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 20px;
 }
 @media (min-width: 768px) {
   #new > div ul #n1 {

@@ -14,10 +14,16 @@
             input{
                color: $basil;
                background-color: white;
-               ::placeholder{ 
-                  color: $basil;
-             border: none;
-            
+            //    ::placeholder{ 
+            //       color: $basil;
+            //  border: none;
+            &::placeholder{ color: $basil;
+            opacity: 1;
+         &::-ms-input-placeholder{ color: $basil}
+      &::-ms-input-placeholder{
+         color: $basil;
+      }
+   }
             
             }
             font-size: rem-calc(14);
@@ -39,5 +45,5 @@
          
        }
       }
-   }
+   
     

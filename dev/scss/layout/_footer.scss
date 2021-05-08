@@ -44,14 +44,28 @@ footer{
         }
 
         article{
-            h1{ color: $earth-dark;}
+            h1{ color: $earth-dark;
+            font-size: rem-calc(20);
+        font-weight: 700;}
+        h2{
+            font-size: rem-calc(16);
+            font-weight:700;
+        }
+        h3{font-size: rem-calc(12);
+            font-weight:300;
+
+        }
             button{
                 background: $lime;
                 color: white;
+                font-size: rem-calc(14);
+                font-weight: 700;
             }
             input{
                 background-color: white;
                 color: $basil;
+                font-size: rem-calc(14);
+                font-weight:700;
             }
             li{
                 color: $basil}
