@@ -703,6 +703,9 @@ footer > div .icon {
 #search > div form input::placeholder::-ms-input-placeholder {
   color: #72AF3A;
 }
+#search > div form input::placeholder hr {
+  color: #A27C64;
+}
 @media (min-width: 768px) {
   #search > div form {
     font-size: 1.875rem;
@@ -719,6 +722,7 @@ footer > div .icon {
   background-color: #B3C32E;
   border: none;
   border-radius: 5;
+  color: white;
 }
 
 /* =============
@@ -760,6 +764,7 @@ footer > div .icon {
   background-color: #B3C32E;
   color: white;
   font-size: 0.875rem;
+  font-weight: 700;
   border: none;
 }
 #planning ul li > div h1 {

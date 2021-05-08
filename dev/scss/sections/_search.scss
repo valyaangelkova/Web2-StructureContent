@@ -22,6 +22,11 @@
          &::-ms-input-placeholder{ color: $basil}
       &::-ms-input-placeholder{
          color: $basil;
+       
+        
+      }
+      hr{
+         color: $earth;
       }
    }
             
@@ -40,6 +45,12 @@
             background-color: $lime;
             border: none;
             border-radius: 5;
+            
+            
+               color: white;
+            
+         
+
           }
          }
          
