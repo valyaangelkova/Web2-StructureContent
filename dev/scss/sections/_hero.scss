@@ -5,6 +5,16 @@
     img {
         object-fit: cover;
         width: 100%;
+        height: 252px;
+        @include md {
+            height: 422px;
+        }
+        @include lg {
+            height: 561px;
+        }
+        @include xl {
+            height: 873px;
+        }
     //     width: 100%;
     }
 
