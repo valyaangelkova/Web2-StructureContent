@@ -522,63 +522,49 @@ footer > div .icon {
 /* =============
     Hero
 ============= */
-#hero #hero-img {
-  background-image: url("../img/hero/hero.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 252px;
+#hero img {
+  object-fit: cover;
+  width: 100%;
 }
+
 @media (min-width: 768px) {
-  #hero #hero-img {
-    height: 422px;
-  }
-}
-@media (min-width: 992px) {
-  #hero #hero-img {
-    height: 561px;
-  }
-}
-@media (min-width: 1200px) {
-  #hero #hero-img {
-    height: 873px;
-  }
-}
-@media (min-width: 768px) {
-  #hero ul {
+  ul {
     display: grid;
     grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 992px) {
-  #hero ul {
+  ul {
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
-#hero ul li {
+ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
   background-color: #B3C32E;
 }
 @media (min-width: 1200px) {
-  #hero ul li {
+  ul li {
     grid-template-columns: auto 460px 16px;
   }
 }
-#hero ul li a {
+ul li a {
   grid-area: hero-content;
 }
-#hero #part1 {
+
+#part1 {
   background-color: #B3C32E;
   color: white;
 }
-#hero #part2 {
+
+#part2 {
   background-color: #D8E37C;
   color: white;
 }
 @media (min-width: 1200px) {
-  #hero #part2 {
+  #part2 {
     grid-template-columns: 16px 460px auto;
   }
 }
