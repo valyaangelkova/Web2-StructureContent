@@ -365,6 +365,14 @@ ul {
 ul li {
   list-style: none;
 }
+ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
+  margin: 0;
+  padding: 0;
+}
+ul p {
+  margin: 0;
+  padding: 0;
+}
 
 /* =============
     Typography
