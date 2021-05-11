@@ -611,8 +611,65 @@ footer > div .icon {
     grid-template-columns: auto 460px 16px;
   }
 }
-#hero ul li a {
+#hero ul li a:link,
+#hero ul li a:visited {
   grid-area: hero-content;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  cursor: pointer;
+  transition: 0, 25s;
+  text-decoration: none;
+}
+#hero ul li a:hover,
+#hero ul li a:active {
+  color: #798420;
+  cursor: pointer;
+  transition: 0, 25s;
+  text-decoration: none;
+}
+#hero ul li div h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 16px 0px 9.5px;
+}
+@media (min-width: 992px) {
+  #hero ul li div h2 {
+    font-size: 1.5625rem;
+    padding: 24px 0px 9.5px;
+  }
+}
+#hero ul li div h3 {
+  font-size: 0.875rem;
+  font-weight: 200;
+  padding: 0px 0px 16px;
+}
+@media (min-width: 992px) {
+  #hero ul li div h3 {
+    font-size: 1rem;
+    padding: 0px 0px 24px;
+  }
+}
+#hero ul li h6 {
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 16px 0px 9.5px;
+}
+@media (min-width: 992px) {
+  #hero ul li h6 {
+    padding: 24px 0px 9.5px;
+  }
+}
+#hero ul li div {
+  align-items: center;
+}
+#hero ul li div h5 {
+  display: none;
+}
+@media (min-width: 992px) {
+  #hero ul li div h5 {
+    display: inline;
+  }
 }
 #hero #part1 {
   background-color: #B3C32E;
@@ -625,6 +682,15 @@ footer > div .icon {
 @media (min-width: 1200px) {
   #hero #part2 {
     grid-template-columns: 16px 460px auto;
+  }
+}
+#hero #bold {
+  font-weight: 700;
+  padding: 0px 0px 16px;
+}
+@media (min-width: 992px) {
+  #hero #bold {
+    padding: 0px 0px 24px;
   }
 }
 
@@ -781,8 +847,29 @@ footer > div .icon {
   }
 }
 #planning ul {
+  margin: 16px 0px 24px;
   display: grid;
   gap: 16px;
+}
+@media (min-width: 768px) {
+  #planning ul {
+    margin: 24px 0px 40px;
+  }
+}
+@media (min-width: 992px) {
+  #planning ul {
+    margin: 24px 0px 56px;
+  }
+}
+@media (min-width: 1200px) {
+  #planning ul {
+    margin: 24px 0px 64px;
+  }
+}
+@media (min-width: 1200px) {
+  #planning ul {
+    margin: 24px 225px 64px;
+  }
 }
 @media (min-width: 768px) {
   #planning ul {
@@ -791,10 +878,21 @@ footer > div .icon {
   }
 }
 #planning ul li {
+  padding: 0px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   background-color: #A27C64;
   grid-template-areas: ".planning.";
+}
+@media (min-width: 768px) {
+  #planning ul li {
+    padding: 24px;
+  }
+}
+@media (min-width: 992px) {
+  #planning ul li {
+    padding: 16px;
+  }
 }
 @media (min-width: 1200px) {
   #planning ul li {
@@ -803,27 +901,30 @@ footer > div .icon {
 }
 #planning ul li > div {
   grid-area: planning;
+  display: flex;
+  justify-content: space-between;
   color: white;
 }
-#planning ul li > div button {
+#planning ul li > div section button {
   background-color: #B3C32E;
   color: white;
   font-size: 0.875rem;
   font-weight: 700;
   border: none;
+  cursor: pointer;
 }
-#planning ul li > div h1 {
+#planning ul li > div section h1 {
   font-family: "Quattrocento", serif;
   font-size: 1.375rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  #planning ul li > div h1 {
+  #planning ul li > div section h1 {
     font-size: 1.8125rem;
   }
 }
 @media (min-width: 992px) {
-  #planning ul li > div h1 {
+  #planning ul li > div section h1 {
     font-size: 1.9375rem;
   }
 }
