@@ -355,7 +355,6 @@ template {
 ============= */
 body {
   font-family: "Montserrat", sans-serif;
-  font-family: "Quattrocento", serif;
 }
 
 ul {
@@ -437,7 +436,27 @@ header > div {
   grid-area: header;
 }
 header > div img {
+  display: inline;
   width: 100px;
+  color: #B3C32E;
+}
+header > div h1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  header > div h1 {
+    display: inline;
+    font-family: "Quattrocento", serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: #B3C32E;
+  }
+}
+@media (min-width: 992px) {
+  header > div h1 {
+    font-size: 2.1875rem;
+    font-weight: 400;
+  }
 }
 
 /* =============
@@ -691,15 +710,19 @@ footer > div .icon {
   }
 }
 #search > div {
+  margin: 16px 16px 18.5px;
   grid-area: search;
 }
 #search > div form {
+  display: flex;
+  justify-content: space-between;
   font-size: 0.875rem;
   font-weight: 300;
 }
 #search > div form input {
   color: #72AF3A;
   background-color: white;
+  border: none;
 }
 #search > div form input::placeholder {
   color: #72AF3A;
@@ -711,7 +734,27 @@ footer > div .icon {
 #search > div form input::placeholder::-ms-input-placeholder {
   color: #72AF3A;
 }
-#search > div form input::placeholder hr {
+#search > div form button {
+  background-color: #B3C32E;
+  border: none;
+  border-radius: 3.5px;
+  height: 34px;
+  width: 43px;
+  cursor: pointer;
+  color: white;
+}
+@media (min-width: 768px) {
+  #search > div form button {
+    width: 61px;
+    height: 49px;
+    border-radius: 5px;
+  }
+}
+#search > div form buttonhover {
+  background-color: #798420;
+  color: white;
+}
+#search > div form hr {
   color: #A27C64;
 }
 @media (min-width: 768px) {
@@ -725,12 +768,6 @@ footer > div .icon {
     font-size: 2.1875rem;
     font-weight: 200;
   }
-}
-#search > div form button {
-  background-color: #B3C32E;
-  border: none;
-  border-radius: 5;
-  color: white;
 }
 
 /* =============
@@ -776,7 +813,7 @@ footer > div .icon {
   border: none;
 }
 #planning ul li > div h1 {
-  font-family: serif;
+  font-family: "Quattrocento", serif;
   font-size: 1.375rem;
   font-weight: 400;
 }
@@ -889,13 +926,13 @@ footer > div .icon {
   border: none;
 }
 #new > div ul li section > div h2 {
-  font-family: serif;
+  font-family: "Quattrocento", serif;
   font-size: 1.6875rem;
   font-weight: 700;
   line-height: 30px;
 }
 #new > div ul li section > div h4 {
-  font-family: serif;
+  font-family: "Quattrocento", serif;
   font-size: 1.125rem;
   font-weight: 700;
 }

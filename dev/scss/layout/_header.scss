@@ -13,11 +13,30 @@ header {
     }
 
     >div {
+       
+
       
         grid-area: header;
+        // display: inline;
 
         img{
+            display: inline;
             width: 100px;
+            color: $lime;
+        }
+        h1{
+            display:none;
+            @include md{ display: inline;
+                font-family: 'Quattrocento', serif;
+                font-size: rem-calc(30);
+                font-weight: 400;
+                color: $lime; }
+                @include lg {
+                    font-size: rem-calc(35);
+                    font-weight: 400;
+
+                }
+           
         }
     }
 
