@@ -42,17 +42,21 @@ footer{
              "f-1 f-2 f-3";
             
         }
-
-        article{
-            h1{ color: $earth-dark;
+        h1{ color: $earth-dark;
             font-size: rem-calc(20);
         font-weight: 700;}
+        margin: 16px 0px;
+        article{
+      
+
         h2{
             font-size: rem-calc(16);
             font-weight:700;
+            margin: 16px 0px;
         }
         h3{font-size: rem-calc(12);
             font-weight:300;
+            margin: 16px 0px;
 
         }
             button{
@@ -60,12 +64,15 @@ footer{
                 color: white;
                 font-size: rem-calc(14);
                 font-weight: 700;
+                cursor: pointer;
+                border:none;
             }
             input{
                 background-color: white;
                 color: $basil;
                 font-size: rem-calc(14);
                 font-weight:700;
+                border:none;
             }
             li{
                 color: $basil}

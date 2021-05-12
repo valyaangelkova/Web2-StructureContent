@@ -19,7 +19,7 @@
             margin: 24px 0px 64px;
         }
         @include xl {
-            margin: 24px 225px 64px;
+            margin: 24px 0px 64px;
         }
         
         display: grid;
@@ -75,7 +75,7 @@
                     }
     
                     h1{
-                        
+                        justify-items: center;
                         font-family:  'Quattrocento', serif;;
                         font-size: rem-calc(22);
                          font-weight:400;

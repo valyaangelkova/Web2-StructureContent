@@ -2,8 +2,28 @@
     New
 ============= */ 
 #new{
+    margin:16px 0 24px;
+    @include md{ 
+        margin:24px 0px 38px;
+
+        @include lg{ 
+            margin:45px 0px 56px;
+    
+        }
+        @include xl{ 
+            margin:58px 0px 64px ;
+    
+        }
+    }
 
     h1{
+        margin: 16px ;
+        @include md{
+            margin: 0px 0px 24px;
+        }
+        @include xl{
+            margin: 0px 0px 16px;
+        }
         font-size: rem-calc(20);
         font-weight: 300;
         color: $basil;
@@ -51,6 +71,7 @@
             ". n4 n4 n5 n5 .";
         }
         li{
+            margin:16px 0px;
             background-color: $dust-light;
             img{
                 width: 100%;
@@ -63,24 +84,29 @@
              grid-template-areas:".new-content.";
              >div{
                  grid-area: new-content; 
-                 border: 1px solid red;
+                //  border: 1px solid red;
                  button{
                      background-color: $lime;
                      color: white;
                      font-size: rem-calc(14);
                      font-weight: 700;
                      border: none;
+                     cursor: pointer;
+                     margin: 24px 0px
+                    //  position: left, bottom;
                  }
                  h2{
                     font-family: 'Quattrocento', serif;
                      font-size: rem-calc(27);
                      font-weight: 700;
                      line-height: 30px;
+                     margin:20px 0px;
                  }
                  h4{
                     font-family: 'Quattrocento', serif;
                      font-size: rem-calc(18);
                      font-weight: 700;
+                     margin:0px 0px 20px
                  }
                  p{
                      font-size: rem-calc(16);
