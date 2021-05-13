@@ -467,19 +467,26 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".footer.";
   background-color: #A27C64;
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 32px 0;
+  }
 }
 @media (min-width: 1200px) {
   footer {
     grid-template-columns: auto 1200px auto;
+    padding: 64px 0;
   }
 }
 footer > div {
   grid-area: footer;
-  margin: 16px 0px;
 }
 @media (min-width: 768px) {
   footer > div {
     display: grid;
+    gap: 16px;
     grid-template-columns: 50% auto;
     grid-template-areas: "f-1 f-2" "f-1 f-3";
   }
@@ -490,15 +497,22 @@ footer > div {
     grid-template-areas: "f-1 f-2 f-3";
   }
 }
-footer > div h1 {
+footer > div .footer-section {
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+}
+footer > div .footer-section h1 {
   color: #714E38;
   font-size: 1.25rem;
   font-weight: 700;
 }
-footer > div article h2 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 16px 0px;
+footer > div article {
+  border-bottom: 1px solid #72AF3A;
+  margin-bottom: 16px;
+  padding-bottom: 16px h2;
+  padding-bottom-font-size: 1rem;
+  padding-bottom-font-weight: 700;
+  padding-bottom-margin: 8px 0px;
 }
 footer > div article h3 {
   font-size: 0.75rem;
