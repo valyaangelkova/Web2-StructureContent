@@ -575,6 +575,7 @@ footer > div .icon {
     Hero
 ============= */
 #hero img {
+  display: block;
   object-fit: cover;
   width: 100%;
   height: 252px;
@@ -614,7 +615,7 @@ footer > div .icon {
 }
 @media (min-width: 1200px) {
   #hero ul li {
-    grid-template-columns: auto 460px 16px;
+    grid-template-columns: auto 496px auto;
   }
 }
 #hero ul li a:link,
@@ -633,6 +634,9 @@ footer > div .icon {
   cursor: pointer;
   transition: 0, 25s;
   text-decoration: none;
+}
+#hero ul li div {
+  padding: 16px 0;
 }
 #hero ul li div h2 {
   font-size: 1.125rem;
@@ -795,6 +799,10 @@ footer > div .icon {
   color: #72AF3A;
   background-color: white;
   border: none;
+  border-bottom: 1px solid #A27C64;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80% auto;
 }
 #search > div form input::placeholder {
   color: #72AF3A;
@@ -813,7 +821,15 @@ footer > div .icon {
   height: 34px;
   width: 43px;
   cursor: pointer;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  padding: 10px 10px 15px;
   color: white;
+}
+@media (min-width: 768px) {
+  #search > div form button {
+    font-size: 1.875rem;
+  }
 }
 @media (min-width: 768px) {
   #search > div form button {
@@ -826,8 +842,8 @@ footer > div .icon {
   background-color: #798420;
   color: white;
 }
-#search > div form hr {
-  color: #A27C64;
+#search > div form button i {
+  text-align: center;
 }
 @media (min-width: 768px) {
   #search > div form {

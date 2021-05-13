@@ -18,6 +18,11 @@
                color: $basil;
                background-color: white;
                border:none;
+               border-bottom: 1px solid $earth;
+               width: 100%;
+
+               display: grid;
+               grid-template-columns: 80% auto;
             //    ::placeholder{ 
             //       color: $basil;
             //  border: none;
@@ -38,12 +43,18 @@
 
     }
     button{
+      //  padding: 18px 0;
+      //  @include md { padding: 22px 0;}
       background-color: $lime;
       border: none;
       border-radius: 3.5px;
       height: 34px;
       width:43px;
       cursor: pointer;
+      font-size: rem-calc(20);
+       @include md {font-size: rem-calc(30);}
+				margin-left: 10px;
+				padding: 10px 10px 15px;
       // padding: 11px 6px 10.15px 6,49px;
       @include md{
          width: 61px;
@@ -60,12 +71,12 @@
       
       
          color: white;
-        
+        i{ text-align: center;}
             
             }
-            hr{
-               color: $earth;
-            }
+            // hr{
+            //    color: $earth;
+            // }
             font-size: rem-calc(14);
             font-weight: 300;
             @include md{ 
