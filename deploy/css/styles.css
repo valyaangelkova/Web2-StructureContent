@@ -397,6 +397,32 @@ p {
 /* =============
     Buttons
 ============= */
+.button {
+  background-color: #B3C32E;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .button {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .button {
+    margin-top: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .button {
+    margin-top: 14px;
+  }
+}
+
 /* =============
     Forms
 ============= */
@@ -600,7 +626,6 @@ footer > div .icon {
   display: block;
   object-fit: cover;
   width: 100%;
-  height: 252px;
 }
 @media (min-width: 768px) {
   #hero img {
@@ -657,6 +682,9 @@ footer > div .icon {
   transition: 0, 25s;
   text-decoration: none;
 }
+#hero ul li div {
+  padding: 16px 0;
+}
 #hero ul li .sub-1 {
   padding: 16px 0;
   align-items: center;
@@ -664,38 +692,6 @@ footer > div .icon {
 @media (min-width: 768px) {
   #hero ul li .sub-1 {
     padding: 23px 0;
-  }
-}
-#hero ul li .sub-1 h2 {
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding: 16px 0px 9.5px;
-}
-@media (min-width: 992px) {
-  #hero ul li .sub-1 h2 {
-    font-size: 1.5625rem;
-    padding: 24px 0px 9.5px;
-  }
-}
-#hero ul li .sub-1 h3 {
-  font-size: 0.875rem;
-  font-weight: 200;
-  padding: 0px 0px 16px;
-}
-@media (min-width: 992px) {
-  #hero ul li .sub-1 h3 {
-    font-size: 1rem;
-    padding: 0px 0px 24px;
-  }
-}
-#hero ul li .sub-1 h6 {
-  font-size: 1rem;
-  font-weight: 200;
-  padding: 16px 0px 9.5px;
-}
-@media (min-width: 992px) {
-  #hero ul li .sub-1 h6 {
-    padding: 24px 0px 9.5px;
   }
 }
 #hero ul li .sub-2 {
@@ -716,6 +712,28 @@ footer > div .icon {
   background-color: #B3C32E;
   color: white;
 }
+#hero #part1 h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 16px 0px 9.5px;
+}
+@media (min-width: 992px) {
+  #hero #part1 h2 {
+    font-size: 1.5625rem;
+    padding: 24px 0px 9.5px;
+  }
+}
+#hero #part1 h3 {
+  font-size: 0.875rem;
+  font-weight: 200;
+  padding: 0px 0px 16px;
+}
+@media (min-width: 992px) {
+  #hero #part1 h3 {
+    font-size: 1rem;
+    padding: 0px 0px 24px;
+  }
+}
 #hero #part2 {
   padding: 16px 0;
   background-color: #D8E37C;
@@ -734,13 +752,22 @@ footer > div .icon {
 #hero #part2 h3 {
   display: flex;
   align-items: center;
+  font-size: 0.875rem;
+  font-weight: 200;
+  padding: 0px 0px 16px;
 }
-#hero #bold {
+@media (min-width: 992px) {
+  #hero #part2 h3 {
+    font-size: 1rem;
+    padding: 0px 0px 24px;
+  }
+}
+#hero #part2 #bold {
   font-weight: 700;
   padding: 0px 0px 16px;
 }
 @media (min-width: 992px) {
-  #hero #bold {
+  #hero #part2 #bold {
     padding: 0px 0px 24px;
   }
 }
@@ -899,6 +926,9 @@ footer > div .icon {
 /* =============
     Planning
 ============= */
+#planning {
+  padding: 16px 0;
+}
 @media (min-width: 768px) {
   #planning {
     display: grid;
@@ -906,53 +936,28 @@ footer > div .icon {
     grid-template-areas: ".planning.";
   }
 }
+@media (min-width: 1200px) {
+  #planning {
+    grid-template-columns: auto 1000px auto;
+  }
+}
 #planning ul {
-  margin: 16px 0px 24px;
   display: grid;
   gap: 16px;
 }
 @media (min-width: 768px) {
   #planning ul {
-    margin: 24px 0px 40px;
-  }
-}
-@media (min-width: 992px) {
-  #planning ul {
-    margin: 24px 0px 56px;
-  }
-}
-@media (min-width: 1200px) {
-  #planning ul {
-    margin: 24px 0px 64px;
-  }
-}
-@media (min-width: 1200px) {
-  #planning ul {
-    margin: 24px 0px 64px;
-  }
-}
-@media (min-width: 768px) {
-  #planning ul {
     grid-area: planning;
     grid-template-columns: 50% auto;
+    gap: 24px;
   }
 }
 #planning ul li {
-  padding: 0px;
+  padding: 24px 0;
   display: grid;
   grid-template-columns: 16px auto 16px;
   background-color: #A27C64;
   grid-template-areas: ".planning.";
-}
-@media (min-width: 768px) {
-  #planning ul li {
-    padding: 24px;
-  }
-}
-@media (min-width: 992px) {
-  #planning ul li {
-    padding: 16px;
-  }
 }
 @media (min-width: 1200px) {
   #planning ul li {
@@ -962,8 +967,11 @@ footer > div .icon {
 #planning ul li > div {
   grid-area: planning;
   display: flex;
-  justify-content: space-between;
   color: white;
+}
+#planning ul li > div section {
+  display: flex;
+  align-items: center;
 }
 #planning ul li > div section button {
   background-color: #B3C32E;
@@ -972,6 +980,23 @@ footer > div .icon {
   font-weight: 700;
   border: none;
   cursor: pointer;
+  padding: 8px 12px;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  #planning ul li > div section button {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #planning ul li > div section button {
+    margin-top: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #planning ul li > div section button {
+    margin-top: 14px;
+  }
 }
 #planning ul li > div section h1 {
   justify-items: center;
@@ -988,6 +1013,10 @@ footer > div .icon {
   #planning ul li > div section h1 {
     font-size: 1.9375rem;
   }
+}
+#planning ul li aside {
+  margin-left: auto;
+  margin-right: 16px;
 }
 #planning ul li aside div {
   background-position: center;
@@ -1122,16 +1151,18 @@ footer > div .icon {
   font-family: "Quattrocento", serif;
   font-size: 1.6875rem;
   font-weight: 700;
-  line-height: 30px;
   margin: 20px 0px;
+  color: #363333;
 }
 #new > div ul li section > div h4 {
+  color: #363333;
   font-family: "Quattrocento", serif;
   font-size: 1.125rem;
   font-weight: 700;
   margin: 0px 0px 20px;
 }
 #new > div ul li section > div p {
+  color: #363333;
   font-size: 1rem;
   font-weight: 300;
   line-height: 20px;
@@ -1140,6 +1171,9 @@ footer > div .icon {
   #new > div ul #n1 {
     grid-area: n1;
   }
+}
+#new > div ul #n1 h2 {
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   #new > div ul #n2 {
@@ -1160,4 +1194,8 @@ footer > div .icon {
   #new > div ul #n5 {
     grid-area: n5;
   }
+}
+#new .button {
+  display: flex;
+  align-content: flex-end;
 }

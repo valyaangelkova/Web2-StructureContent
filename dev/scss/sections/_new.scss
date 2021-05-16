@@ -83,9 +83,12 @@
              grid-template-columns: 16px auto 16px;
              grid-template-areas:".new-content.";
              >div{
+                
                  grid-area: new-content; 
                 //  border: 1px solid red;
                  button{
+                    //  display: flex;
+                    //  align-content:flex-end ;
                      background-color: $lime;
                      color: white;
                      font-size: rem-calc(14);
@@ -99,16 +102,19 @@
                     font-family: 'Quattrocento', serif;
                      font-size: rem-calc(27);
                      font-weight: 700;
-                     line-height: 30px;
-                     margin:20px 0px;
+                    //  line-height: 30px;
+                     margin:20px 0px ;
+                     color: $dust-dark;
                  }
                  h4{
+                    color: $dust-dark;
                     font-family: 'Quattrocento', serif;
                      font-size: rem-calc(18);
                      font-weight: 700;
                      margin:0px 0px 20px
                  }
                  p{
+                    color: $dust-dark;
                      font-size: rem-calc(16);
                      font-weight: 300;
                      line-height: 20px;
@@ -125,10 +131,14 @@
             }
 
         }
-        #n1{
+        #n1{ 
+           
             @include md{ 
                 grid-area: n1;
             }
+            
+            h2{
+                margin-bottom: 10px;}
         }
         #n2{
             @include md{ 
@@ -151,6 +161,10 @@
             }
         }
     }
+}
+.button{
+    display: flex;
+    align-content: flex-end;
 }
    
 

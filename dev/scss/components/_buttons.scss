@@ -1,3 +1,22 @@
 /* =============
     Buttons
 ============= */
+.button{
+    background-color: $lime;
+                        color: white;
+                        font-size: rem-calc(14);
+                        font-weight: 700;
+                        border: none;
+                        cursor: pointer;
+                        padding: 8px 12px;
+                        margin-top: 16px;
+                        @include md{ 
+                            margin-top: 20px;
+                        }
+                        @include lg{ 
+                            margin-top: 16px;
+                        }
+                        @include xl{ 
+                            margin-top: 14px;
+                        }
+}
