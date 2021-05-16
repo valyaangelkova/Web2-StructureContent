@@ -380,7 +380,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -418,6 +418,10 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
@@ -533,6 +537,10 @@ footer > div article input {
   font-size: 0.875rem;
   font-weight: 700;
   border: none;
+  padding: 20px 12px;
+  width: 80%;
+  border-radius: 0px;
+  margin: 20px 0px;
 }
 footer > div article li {
   color: #72AF3A;
@@ -649,50 +657,59 @@ footer > div .icon {
   transition: 0, 25s;
   text-decoration: none;
 }
-#hero ul li div {
+#hero ul li .sub-1 {
   padding: 16px 0;
+  align-items: center;
 }
-#hero ul li div h2 {
+@media (min-width: 768px) {
+  #hero ul li .sub-1 {
+    padding: 23px 0;
+  }
+}
+#hero ul li .sub-1 h2 {
   font-size: 1.125rem;
   font-weight: 700;
   padding: 16px 0px 9.5px;
 }
 @media (min-width: 992px) {
-  #hero ul li div h2 {
+  #hero ul li .sub-1 h2 {
     font-size: 1.5625rem;
     padding: 24px 0px 9.5px;
   }
 }
-#hero ul li div h3 {
+#hero ul li .sub-1 h3 {
   font-size: 0.875rem;
   font-weight: 200;
   padding: 0px 0px 16px;
 }
 @media (min-width: 992px) {
-  #hero ul li div h3 {
+  #hero ul li .sub-1 h3 {
     font-size: 1rem;
     padding: 0px 0px 24px;
   }
 }
-#hero ul li h6 {
+#hero ul li .sub-1 h6 {
   font-size: 1rem;
   font-weight: 200;
   padding: 16px 0px 9.5px;
 }
 @media (min-width: 992px) {
-  #hero ul li h6 {
+  #hero ul li .sub-1 h6 {
     padding: 24px 0px 9.5px;
   }
 }
-#hero ul li div {
+#hero ul li .sub-2 {
+  display: flex;
   align-items: center;
 }
-#hero ul li div h5 {
+#hero ul li .sub-2 h5 {
   display: none;
+  margin-right: 15px;
 }
 @media (min-width: 992px) {
-  #hero ul li div h5 {
-    display: inline;
+  #hero ul li .sub-2 h5 {
+    display: block;
+    font-size: 1.125rem;
   }
 }
 #hero #part1 {
@@ -700,13 +717,23 @@ footer > div .icon {
   color: white;
 }
 #hero #part2 {
+  padding: 16px 0;
   background-color: #D8E37C;
   color: white;
+}
+@media (min-width: 768px) {
+  #hero #part2 {
+    padding: 23px 0;
+  }
 }
 @media (min-width: 1200px) {
   #hero #part2 {
     grid-template-columns: 16px 460px auto;
   }
+}
+#hero #part2 h3 {
+  display: flex;
+  align-items: center;
 }
 #hero #bold {
   font-weight: 700;
