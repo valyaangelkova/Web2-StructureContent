@@ -18,6 +18,12 @@
             display:flex;
             justify-content: space-between;
             input{
+               font-weight: 200;
+               font-size: 14;
+               @include md{ 
+                  font-weight: 300;
+               font-size: 30;
+               }
                color: $basil;
                background-color: transparent;
                border:none;
