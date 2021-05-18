@@ -493,10 +493,11 @@ header > div h1 {
     Footer
 ============= */
 footer {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ".footer.";
   background-color: #A27C64;
+  color: #72AF3A;
+  display: grid;
+  grid-template-areas: ". footer .";
+  grid-template-columns: 16px auto 16px;
   padding: 24px 0;
 }
 @media (min-width: 768px) {
@@ -517,97 +518,161 @@ footer > div {
   footer > div {
     display: grid;
     gap: 16px;
+    grid-template-areas: "locations sing-up" "locations follow";
     grid-template-columns: 50% auto;
-    grid-template-areas: "f-1 f-2" "f-1 f-3";
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   footer > div {
+    grid-template-areas: "locations sing-up follow";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "f-1 f-2 f-3";
   }
 }
 footer > div .footer-section {
   padding-bottom: 24px;
-  margin-bottom: 16px;
 }
 footer > div .footer-section h1 {
-  color: #714E38;
   font-size: 1.25rem;
   font-weight: 700;
-}
-footer > div article {
-  border-bottom: 1px solid #72AF3A;
   margin-bottom: 16px;
-  padding-bottom: 16px h2;
-  padding-bottom-font-size: 1rem;
-  padding-bottom-font-weight: 700;
-  padding-bottom-margin: 8px 0px;
+  color: #714E38;
 }
-footer > div article h3 {
-  font-size: 0.75rem;
+@media (min-width: 768px) {
+  footer > div #locations {
+    grid-area: locations;
+  }
+}
+footer > div #locations section {
+  border-bottom: 1px solid white;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+footer > div #locations section h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+footer > div #locations section ul li {
+  display: flex;
+  font-size: 0.875rem;
   font-weight: 300;
-  margin: 16px 0px;
+  margin-bottom: 8px;
 }
-footer > div article button {
-  background: #B3C32E;
+footer > div #locations section ul li address {
+  font-style: normal;
+}
+footer > div #locations section ul li i {
+  color: #B3C32E;
+  margin-right: 10px;
+}
+footer > div #locations section ul li div {
+  align-items: center;
+  display: flex;
+}
+footer > div #locations section ul li a:link,
+footer > div #locations section ul li a:visited {
+  color: #72AF3A;
+}
+footer > div #locations section ul li a:link:hover, footer > div #locations section ul li a:link:active,
+footer > div #locations section ul li a:visited:hover,
+footer > div #locations section ul li a:visited:active {
+  color: #568629;
+}
+footer > div #locations section:last-child {
+  border: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+@media (min-width: 768px) {
+  footer > div #sign-up {
+    grid-area: sing-up;
+  }
+}
+footer > div #sign-up form input {
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  font-weight: 700;
+  padding: 16px 2%;
+  width: 96%;
+}
+footer > div #sign-up form input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #72AF3A;
+  /* Firefox */
+  opacity: 1;
+}
+footer > div #sign-up form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #72AF3A;
+}
+footer > div #sign-up form input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #72AF3A;
+}
+footer > div #sign-up form button {
+  display: flex;
+  margin-left: auto;
+  margin-top: 16px;
+  background-color: #B3C32E;
   color: white;
   font-size: 0.875rem;
   font-weight: 700;
+  border: none;
   cursor: pointer;
-  border: none;
+  padding: 8px 12px;
+  margin-top: 16px;
 }
-footer > div article input {
-  background-color: white;
-  color: #72AF3A;
-  font-size: 0.875rem;
-  font-weight: 700;
-  border: none;
-  padding: 20px 12px;
-  width: 80%;
-  border-radius: 0px;
-  margin: 20px 0px;
-}
-footer > div article li {
-  color: #72AF3A;
-}
-footer > div .icon {
-  color: #B3C32E;
-}
-
 @media (min-width: 768px) {
-  #f-1 {
-    grid-area: f-1;
+  footer > div #sign-up form button {
+    margin-top: 20px;
   }
 }
-
-#f-2 {
-  grid-area: f-2;
+@media (min-width: 992px) {
+  footer > div #sign-up form button {
+    margin-top: 16px;
+  }
 }
-
-#f-3 {
-  grid-area: f-3;
+@media (min-width: 1200px) {
+  footer > div #sign-up form button {
+    margin-top: 14px;
+  }
 }
-#f-3  ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "1 2 3 4";
+@media (min-width: 768px) {
+  footer > div #follow {
+    grid-area: follow;
+  }
 }
-
-#yt {
-  grid-area: 1;
+@media (min-width: 1200px) {
+  footer > div #follow {
+    text-align: right;
+  }
 }
-
-#tw {
-  grid-area: 2;
+footer > div #follow ul {
+  display: flex;
 }
-
-#in {
-  grid-area: 3;
+@media (min-width: 992px) {
+  footer > div #follow ul {
+    justify-content: flex-end;
+  }
 }
-
-#fb {
-  grid-area: 4;
+footer > div #follow ul li {
+  margin-right: 16px;
+}
+@media (min-width: 768px) {
+  footer > div #follow ul li {
+    margin: 0 8px;
+  }
+}
+footer > div #follow ul li a:link,
+footer > div #follow ul li a:visited {
+  color: white;
+  font-size: 1.875rem;
+}
+footer > div #follow ul li a:link:hover, footer > div #follow ul li a:link:active,
+footer > div #follow ul li a:visited:hover,
+footer > div #follow ul li a:visited:active {
+  color: #714E38;
 }
 
 /*
