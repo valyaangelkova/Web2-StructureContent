@@ -467,25 +467,12 @@ header > div {
 }
 header > div img {
   display: inline;
-  width: 100px;
+  width: 50%;
   color: #B3C32E;
 }
-header > div h1 {
-  display: none;
-}
-@media (min-width: 768px) {
-  header > div h1 {
-    display: inline;
-    font-family: "Quattrocento", serif;
-    font-size: 1.875rem;
-    font-weight: 400;
-    color: #B3C32E;
-  }
-}
-@media (min-width: 992px) {
-  header > div h1 {
-    font-size: 2.1875rem;
-    font-weight: 400;
+@media (min-width: 1200px) {
+  header > div img {
+    width: 30%;
   }
 }
 
