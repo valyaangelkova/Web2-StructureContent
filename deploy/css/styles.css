@@ -452,26 +452,32 @@ a {
     Header
 ============= */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   background-color: #A27C64;
 }
 @media (min-width: 992px) {
-  header {
+  header > div {
     grid-template-columns: аuto 80% auto;
   }
 }
-header > div {
+header > div nav {
   grid-area: header;
 }
-header > div img {
+header > div nav img {
   display: inline;
   width: 50%;
   color: #B3C32E;
 }
 @media (min-width: 1200px) {
-  header > div img {
+  header > div nav img {
     width: 30%;
   }
 }
@@ -906,9 +912,25 @@ footer > div #follow ul li a:visited:active {
    Search
 ============= */
 #search {
+  padding-top: 40px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+}
+@media (min-width: 768px) {
+  #search {
+    padding-top: 85px;
+  }
+}
+@media (min-width: 992px) {
+  #search {
+    padding-top: 125px;
+  }
+}
+@media (min-width: 1200px) {
+  #search {
+    padding-top: 85px;
+  }
 }
 @media (min-width: 992px) {
   #search {

@@ -2,6 +2,19 @@
    Search
 ============= */
   #search {
+     padding-top: 40px;
+     @include md{ 
+      padding-top: 85px;
+   
+     }
+     @include lg{ 
+      padding-top: 125px;
+   
+     }
+     @include xl{ 
+      padding-top: 85px;
+   
+     }
      display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas:". search .";
