@@ -2,18 +2,25 @@
     Header
 ============= */
 header {
-    display: grid;
-
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header .";
     background-color: $earth;
-    @include lg {
-        grid-template-columns: аuto 80% auto;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width:100%;
+   
     
     }
 
     >div {
-       
+        display: grid;
+
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+   
+    @include lg {
+        grid-template-columns: аuto 80% auto;
+    
+       nav{
 
       
         grid-area: header;
@@ -27,20 +34,21 @@ header {
                 width:30%;
             }
         }
-        // h1{
-        //     display:none;
-        //     @include md{ display: inline;
-        //         font-family: 'Quattrocento', serif;
-        //         font-size: rem-calc(30);
-        //         font-weight: 400;
-        //         color: $lime; }
-        //         @include lg {
-        //             font-size: rem-calc(35);
-        //             font-weight: 400;
+    }
+    //     h1{
+    //         display:none;
+    //         @include md{ display: inline;
+    //             font-family: 'Quattrocento', serif;
+    //             font-size: rem-calc(30);
+    //             font-weight: 400;
+    //             color: $lime; }
+    //             @include lg {
+    //                 font-size: rem-calc(35);
+    //                 font-weight: 400;
 
-        //         }
+    //             }
            
         
-    }
+    // }
 
 }
