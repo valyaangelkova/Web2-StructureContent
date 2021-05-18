@@ -682,17 +682,8 @@ footer > div .icon {
   transition: 0, 25s;
   text-decoration: none;
 }
-#hero ul li div {
-  padding: 16px 0;
-}
 #hero ul li .sub-1 {
-  padding: 16px 0;
   align-items: center;
-}
-@media (min-width: 768px) {
-  #hero ul li .sub-1 {
-    padding: 23px 0;
-  }
 }
 #hero ul li .sub-2 {
   display: flex;
@@ -711,27 +702,34 @@ footer > div .icon {
 #hero #part1 {
   background-color: #B3C32E;
   color: white;
+  padding: 16px 0;
+}
+@media (min-width: 768px) {
+  #hero #part1 {
+    padding: 24px 0;
+  }
+}
+@media (min-width: 992px) {
+  #hero #part1 {
+    padding: 20px 0;
+  }
 }
 #hero #part1 h2 {
   font-size: 1.125rem;
   font-weight: 700;
-  padding: 16px 0px 9.5px;
 }
 @media (min-width: 992px) {
   #hero #part1 h2 {
     font-size: 1.5625rem;
-    padding: 24px 0px 9.5px;
   }
 }
 #hero #part1 h3 {
-  font-size: 0.875rem;
-  font-weight: 200;
-  padding: 0px 0px 16px;
+  font-size: 1rem;
+  font-weight: 300;
 }
 @media (min-width: 992px) {
   #hero #part1 h3 {
-    font-size: 1rem;
-    padding: 0px 0px 24px;
+    font-weight: 200;
   }
 }
 #hero #part2 {
@@ -741,7 +739,17 @@ footer > div .icon {
 }
 @media (min-width: 768px) {
   #hero #part2 {
-    padding: 23px 0;
+    padding: 24px 0;
+  }
+}
+@media (min-width: 992px) {
+  #hero #part2 {
+    padding: 20px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #part2 {
+    padding-top: 24px;
   }
 }
 @media (min-width: 1200px) {
@@ -752,26 +760,17 @@ footer > div .icon {
 #hero #part2 h3 {
   display: flex;
   align-items: center;
-  font-size: 0.875rem;
-  font-weight: 200;
-  padding: 0px 0px 16px;
+  font-size: 1rem;
+  font-weight: 300;
 }
 @media (min-width: 992px) {
   #hero #part2 h3 {
-    font-size: 1rem;
-    padding: 0px 0px 24px;
+    font-weight: 200;
   }
 }
 #hero #part2 #bold {
   font-weight: 700;
-  padding: 0px 0px 16px;
 }
-@media (min-width: 992px) {
-  #hero #part2 #bold {
-    padding: 0px 0px 24px;
-  }
-}
-
 /* =============
    Hero2
 ============= */
