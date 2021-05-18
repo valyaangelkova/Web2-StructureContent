@@ -165,11 +165,12 @@
             }
             .sub-1{
                 // padding: 16px 0;
-                @include md{ 
+                @include xl{ padding-left: 20px;
                     // padding: 23px 0;
                     
                 }
                 align-items: center;
+                
             // h2 {
             //     font-size: rem-calc(18);
             //     font-weight: 700;
@@ -251,6 +252,10 @@
         }
         @include lg{
             padding: 20px 0;
+        }
+        @include xl{
+            padding-left: 130px ;
+            padding-right: 16px;
         }
 
         h2 {
