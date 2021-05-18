@@ -38,7 +38,7 @@
             
         }
         li{
-            padding: 24px 0;
+            // padding: 24px 0;
             // @include md{ 
             //     padding: 24px;
             // }
@@ -46,6 +46,7 @@
             //     padding: 16px;
             // }
             
+            padding: 16px 0;
 
             display: grid;
             // @include md{ grid-template-columns: 16px auto 16px;
@@ -144,8 +145,9 @@
         }
         #planning-left{
             background-image: url(../img/hero/planning_left.jpg);
-            background-position: -35px 0px;
+            background-position: -26px 0;
             background-size: cover;
+            @include md{ background-position: -35px 0px;}
         }
         #planning-right{
             background-image: url(../img/hero/planning-right.jpg);

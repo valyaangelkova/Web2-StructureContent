@@ -952,7 +952,7 @@ footer > div .icon {
   }
 }
 #planning ul li {
-  padding: 24px 0;
+  padding: 16px 0;
   display: grid;
   grid-template-columns: 16px auto 16px;
   background-color: #A27C64;
@@ -1038,8 +1038,13 @@ footer > div .icon {
 }
 #planning #planning-left {
   background-image: url(../img/hero/planning_left.jpg);
-  background-position: -35px 0px;
+  background-position: -26px 0;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  #planning #planning-left {
+    background-position: -35px 0px;
+  }
 }
 #planning #planning-right {
   background-image: url(../img/hero/planning-right.jpg);
