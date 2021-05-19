@@ -5,36 +5,42 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    
-    width:100%;
-   
-   
+
+    width: 100%;
+    //  display: grid;
+    //     grid-template-columns: 16px auto 16px;
+    //     grid-template-areas: ". header .";
+        background-color: $earth;
+        padding: 21px 0 0;
+        @include md{ padding:24px 0 0;}
+
+
+       
+
+
+
 
     >div {
 
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". header .";
-        background-color: $earth;
-        @include lg {
-            grid-template-columns: аuto 80% auto;
-        
-        }
-       nav{
-
-      
+       
+        display:grid;
+        grid-template-areas: "logo burger"
+        "nav nav";
+        grid-template-columns:40% auto;
         grid-area: header;
-        // display: inline;
 
-        img{
-            display: inline;
-            width: 50%;
-            color: $lime;
-            @include xl{
-                width:30%;
-            }
-        }
-    }
+       
+
+
+           @include lg{
+               grid-template-areas: "logo nav";
+               grid-template-columns:20% auto;
+           }
+            // display: inline;
+
+           
+    
+ 
         // h1{
         //     display:none;
         //     @include md{ display: inline;
@@ -47,8 +53,56 @@ header {
         //             font-weight: 400;
 
         //         }
-           
-        
-    }
+// }
+#logo-container {
+            grid-area: logo;
+            padding: 10px;
+            
+
+           a:link, a:visited {
+                transition: 0.25s;
+
+                &:hover {
+                }
+            }
+
+            
+        }
+
+
+          #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            padding: 10px;
+
+            @include lg {
+                display: none;
+            }
+
+            i {
+                margin-left:auto;
+                cursor: pointer;
+                font-size: rem-calc(30);
+                color:$earth-dark;
+            }
+        }
+
+        #nav-container {
+            background-color: $earth-light;
+            display: none;
+            grid-area: nav;
+            padding: 20px 10px 10px;
+
+            @include lg {
+                background-color: $earth;
+                display: block;
+            }
+        }
 
 }
+
+    }
+
+
+

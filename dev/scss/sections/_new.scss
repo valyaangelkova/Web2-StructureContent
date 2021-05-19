@@ -1,187 +1,211 @@
 /* =============
     New
-============= */ 
-#new{
-    margin:16px 0 24px;
-    @include md{ 
-        margin:24px 0px 38px;
+============= */
+#new {
+    margin: 16px 0 24px;
 
-        @include lg{ 
-            margin:45px 0px 56px;
-    
+    @include md {
+        margin: 24px 0px 38px;
+
+        @include lg {
+            margin: 45px 0px 56px;
+
         }
-        @include xl{ 
-            margin:58px 0px 64px ;
-    
+
+        @include xl {
+            margin: 58px 0px 64px;
+
         }
     }
 
-    h1{
-        margin: 16px ;
-        @include md{
+    h1 {
+        margin: 16px;
+
+        @include md {
             margin: 0px 0px 24px;
         }
-        @include xl{
+
+        @include xl {
             margin: 0px 0px 16px;
         }
+
         font-size: rem-calc(20);
         font-weight: 300;
         color: $basil;
-        @include lg{
+
+        @include lg {
             font-size: rem-calc(37);
             font-weight: 200;
 
         }
     }
 
-    @include md{
+    @include md {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". new .";
-    
+
     }
-    @include xl{ 
+
+    @include xl {
         // display: grid;
         grid-template-columns: auto 1200px auto;
         // grid-template-areas: ". new .";
     }
 
->div{
-   
+    >div {
 
-    @include md{
-        grid-area: new;
-    }
-    ul{
-        @include md{ 
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: 
-            "n1 n1 n2 n2"
-            "n3 n3 n4 n4"
-            ". n5 n5.";
-            gap: 16px;
-        
+
+        @include md {
+            grid-area: new;
         }
-        @include lg{ 
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-areas: 
-            "n1 n1 n2 n2 n3 n3"
-            ". n4 n4 n5 n5 .";
-        }
-        li{
-            margin:16px 0px;
-            background-color: $dust-light;
-            img{
-                width: 100%;
- 
+
+        ul {
+            @include md {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                    "n1 n1 n2 n2"
+                    "n3 n3 n4 n4"
+                    ". n5 n5.";
+                gap: 16px;
+
             }
 
-            section{
-             display: grid;
-             grid-template-columns: 16px auto 16px;
-             grid-template-areas:".new-content.";
-             >div{
-                
-                 grid-area: new-content; 
-                //  border: 1px solid red;
-                 button{
-                    //  display: flex;
-                    //  align-content:flex-end ;
-                     background-color: $lime;
-                     color: white;
-                     font-size: rem-calc(14);
-                     font-weight: 700;
-                     border: none;
-                     cursor: pointer;
-                     margin: 24px 0px
-                    //  position: left, bottom;
-                 }
-                 h2{
-                    font-family: 'Quattrocento', serif;
-                     font-size: rem-calc(27);
-                     font-weight: 700;
-                    //  line-height: 30px;
-                     margin:20px 0px ;
-                     color: $dust-dark;
-                 }
-                 h4{
-                    color: $dust-dark;
-                    font-family: 'Quattrocento', serif;
-                     font-size: rem-calc(18);
-                     font-weight: 700;
-                     margin:0px 0px 20px
-                 }
-                 p{
-                    color: $dust-dark;
-                     font-size: rem-calc(16);
-                     font-weight: 300;
-                     line-height: 20px;
-                 }
- 
-             //     @include md{
-             //         display: grid;
-             // grid-template-columns: 16px auto 16px;
-             // grid-template-areas:".new-content.";
-             //     }
-                
- 
+            @include lg {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas:
+                    "n1 n1 n2 n2 n3 n3"
+                    ". n4 n4 n5 n5 .";
+            }
+
+            li {
+                margin: 16px 0px;
+                background-color: $dust-light;
+
+                img {
+                    width: 100%;
+
                 }
-                // div{
-                //     display: grid;
-                //     grid-template-rows:  auto;
 
-                // }
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ".new-content.";
+
+                    >div {
+
+                        grid-area: new-content;
+
+                        //  border: 1px solid red;
+                        button {
+                            //  display: flex;
+                            //  align-content:flex-end ;
+                            background-color: $lime;
+                            color: white;
+                            font-size: rem-calc(14);
+                            font-weight: 700;
+                            border: none;
+                            cursor: pointer;
+                            margin: 24px 0px //  position: left, bottom;
+                        }
+
+                        h2 {
+                            font-family: 'Quattrocento', serif;
+                            font-size: rem-calc(27);
+                            font-weight: 700;
+                            //  line-height: 30px;
+                            margin: 20px 0px;
+                            color: $dust-dark;
+                        }
+
+                        h4 {
+                            color: $dust-dark;
+                            font-family: 'Quattrocento', serif;
+                            font-size: rem-calc(18);
+                            font-weight: 700;
+                            margin: 0px 0px 20px
+                        }
+
+                        p {
+                            color: $dust-dark;
+                            font-size: rem-calc(16);
+                            font-weight: 300;
+                            line-height: 20px;
+                        }
+
+                        //     @include md{
+                        //         display: grid;
+                        // grid-template-columns: 16px auto 16px;
+                        // grid-template-areas:".new-content.";
+                        //     }
+
+
+                    }
+
+                    // div{
+                    //     display: grid;
+                    //     grid-template-rows:  auto;
+
+                    // }
+                }
+
             }
 
-        }
-        #n1{ 
-           
-            @include md{ 
-                grid-area: n1;
+            #n1 {
+
+                @include md {
+                    grid-area: n1;
+                }
+
+                h2 {
+                    margin-bottom: 10px;
+                }
             }
-            
-            h2{
-                margin-bottom: 10px;}
-        }
-        #n2{
-            @include md{ 
-                grid-area: n2;
+
+            #n2 {
+                @include md {
+                    grid-area: n2;
+                }
             }
-        }
-        #n3{
-            @include md{ 
-                grid-area: n3;
+
+            #n3 {
+                @include md {
+                    grid-area: n3;
+                }
             }
-        }
-        #n4{
-            @include md{ 
-                grid-area: n4;
+
+            #n4 {
+                @include md {
+                    grid-area: n4;
+                }
             }
-        }
-        #n5{
-            @include md{ 
-                grid-area: n5;
+
+            #n5 {
+                @include md {
+                    grid-area: n5;
+                }
             }
         }
     }
-}
-.button{
-    display: flex;
-    align-content: flex-end;
-}
-//    .content{
-//        display:flex
-//    }
-//    .read{
-//        grid-row:end ;
-//    }
+
+    .button {
+        display: flex;
+        align-content: flex-end;
+    }
+
+    //    .content{
+    //        display:flex
+    //    }
+    //    .read{
+    //        grid-row:end ;
+    //    }
 
     //   @include md {grid-template-columns: 32px auto 32px
     //   }
     //   @include lg {grid-template-columns: 236px auto 236px
     //   }
-    
+
 
 }

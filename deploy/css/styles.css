@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* =============
     Mixins
 ============= */
@@ -358,8 +357,8 @@ body {
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 ul li {
   list-style: none;
@@ -380,7 +379,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -399,13 +403,13 @@ p {
 ============= */
 .button {
   background-color: #B3C32E;
+  border: none;
   color: white;
+  cursor: pointer;
   font-size: 0.875rem;
   font-weight: 700;
-  border: none;
-  cursor: pointer;
-  padding: 8px 12px;
   margin-top: 16px;
+  padding: 8px 12px;
 }
 @media (min-width: 768px) {
   .button {
@@ -448,6 +452,43 @@ a {
   text-decoration: none;
 }
 
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 992px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  #nav-container ul li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #714E38;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: 0.25s;
+  font-size: 1.25rem;
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #D1B4A1;
+}
+#nav-container ul li:last-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
@@ -456,29 +497,60 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #A27C64;
+  padding: 21px 0 0;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 24px 0 0;
+  }
 }
 header > div {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
-  background-color: #A27C64;
+  grid-template-areas: "logo burger" "nav nav";
+  grid-template-columns: 40% auto;
+  grid-area: header;
 }
 @media (min-width: 992px) {
   header > div {
-    grid-template-columns: аuto 80% auto;
+    grid-template-areas: "logo nav";
+    grid-template-columns: 20% auto;
   }
 }
-header > div nav {
-  grid-area: header;
+header > div #logo-container {
+  grid-area: logo;
+  padding: 10px;
 }
-header > div nav img {
-  display: inline;
-  width: 50%;
-  color: #B3C32E;
+header > div #logo-container a:link, header > div #logo-container a:visited {
+  transition: 0.25s;
 }
-@media (min-width: 1200px) {
-  header > div nav img {
-    width: 30%;
+header > div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  padding: 10px;
+}
+@media (min-width: 992px) {
+  header > div #burger-container {
+    display: none;
+  }
+}
+header > div #burger-container i {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 1.875rem;
+  color: #714E38;
+}
+header > div #nav-container {
+  background-color: #D1B4A1;
+  display: none;
+  grid-area: nav;
+  padding: 20px 10px 10px;
+}
+@media (min-width: 992px) {
+  header > div #nav-container {
+    background-color: #A27C64;
+    display: block;
   }
 }
 
@@ -912,24 +984,24 @@ footer > div #follow ul li a:visited:active {
    Search
 ============= */
 #search {
-  padding-top: 40px;
+  margin-top: 75px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
 @media (min-width: 768px) {
   #search {
-    padding-top: 85px;
+    margin-top: 100px;
   }
 }
 @media (min-width: 992px) {
   #search {
-    padding-top: 125px;
+    margin-top: 100px;
   }
 }
 @media (min-width: 1200px) {
   #search {
-    padding-top: 85px;
+    margin-top: 110px;
   }
 }
 @media (min-width: 992px) {

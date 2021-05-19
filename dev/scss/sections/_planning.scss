@@ -3,15 +3,18 @@
 ============= */
 #planning {
     padding: 16px 0;
+
     @include md {
-        display:grid;
+        display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ".planning.";
     }
-    @include xl{ 
+
+    @include xl {
         grid-template-columns: auto 1000px auto;
     }
-    ul{
+
+    ul {
         // margin: 16px 0px 24px;
         // @include md {
         //     margin: 24px 0px 40px;
@@ -25,19 +28,20 @@
         // @include xl {
         //     margin: 24px 0px 64px;
         // }
-        
+
         display: grid;
-      
+
         gap: 16px;
-        
-                @include md{ 
-                grid-area: planning;
+
+        @include md {
+            grid-area: planning;
             // display: grid;
             grid-template-columns: 50% auto;
             gap: 24px;
-            
+
         }
-        li{
+
+        li {
             // padding: 24px 0;
             // @include md{ 
             //     padding: 24px;
@@ -45,36 +49,37 @@
             // @include lg{ 
             //     padding: 16px;
             // }
-            
+
             padding: 16px 0;
 
             display: grid;
             // @include md{ grid-template-columns: 16px auto 16px;
-            
+
             //     grid-template-areas:".planning."; }
             grid-template-columns: 16px auto 16px;
             background-color: $earth;
-            grid-template-areas:".planning.";
-          
-            @include xl{
-                grid-template-columns:  auto 460px 16px;
+            grid-template-areas: ".planning.";
+
+            @include xl {
+                grid-template-columns: auto 460px 16px;
             }
-            
 
-            >div{
-                
 
-                grid-area: planning; 
+            >div {
+
+
+                grid-area: planning;
                 // border: 1px solid red;
                 display: flex;
                 // justify-content: space-between;
                 color: white;
-                section{
+
+                section {
                     display: flex;
                     align-items: center;
 
                     // justify-items: center;
-                    button{
+                    button {
                         background-color: $lime;
                         color: white;
                         font-size: rem-calc(14);
@@ -83,85 +88,97 @@
                         cursor: pointer;
                         padding: 8px 12px;
                         margin-top: 16px;
-                        @include md{ 
+
+                        @include md {
                             margin-top: 20px;
                         }
-                        @include lg{ 
+
+                        @include lg {
                             margin-top: 16px;
                         }
-                        @include xl{ 
+
+                        @include xl {
                             margin-top: 14px;
                         }
                     }
-    
-                    h1{
+
+                    h1 {
                         justify-items: center;
-                        font-family:  'Quattrocento', serif;;
+                        font-family: 'Quattrocento', serif;
+                        ;
                         font-size: rem-calc(22);
-                         font-weight:400;
-    
-                         @include md{
+                        font-weight: 400;
+
+                        @include md {
                             font-size: rem-calc(29);
-    
-                         }
-                         @include lg{
+
+                        }
+
+                        @include lg {
                             font-size: rem-calc(31);
-                            
-                         }
-    
+
+                        }
+
                     }
                 }
-               
+
 
             }
-            aside{
+
+            aside {
                 margin-left: auto;
                 margin-right: 16px;
-                
-                div{
+
+                div {
                     background-position: center;
-                    background-size:cover;
+                    background-size: cover;
                     border: 4px white solid;
                     height: 85px;
                     width: 85px;
                     border-radius: 100%;
-                    @include md{ 
-                        height:113px;
+
+                    @include md {
+                        height: 113px;
                         width: 113px;
                     }
-                  
-                }
 
                 }
+
             }
-            
+        }
 
-        }
-        #planning-2{
-           
-            @include xl{
-                grid-template-columns:  16px 460px auto;}
-                
-        }
-        #planning-left{
-            background-image: url(../img/hero/planning_left.jpg);
-            background-position: -26px 0;
-            background-size: cover;
-            @include md{ background-position: -35px 0px;}
-        }
-        #planning-right{
-            background-image: url(../img/hero/planning-right.jpg);
-            background-position: center;
-            background-size: cover;
 
+    }
+
+    #planning-2 {
+
+        @include xl {
+            grid-template-columns: 16px 460px auto;
+        }
+
+    }
+
+    #planning-left {
+        background-image: url(../img/hero/planning_left.jpg);
+        background-position: -26px 0;
+        background-size: cover;
+
+        @include md {
+            background-position: -35px 0px;
         }
     }
-   
-        
 
-        // @include md {grid-template-columns: 32px auto 32px
-        // }
-        // @include lg {grid-template-columns: 236px auto 236px
-        // }
-    
-  
+    #planning-right {
+        background-image: url(../img/hero/planning-right.jpg);
+        background-position: center;
+        background-size: cover;
+
+    }
+}
+
+
+
+// @include md {grid-template-columns: 32px auto 32px
+// }
+// @include lg {grid-template-columns: 236px auto 236px
+// }

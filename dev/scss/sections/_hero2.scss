@@ -1,104 +1,118 @@
 /* =============
    Hero2
 ============= */
-#hero2 { 
+#hero2 {
    display: grid;
-  
-   @include xl{
+
+   @include xl {
       display: grid;
-      
+
       grid-template-columns: auto 1000px auto;
       grid-template-areas: ".hero2.";
    }
-   ul{
-      
+
+   ul {
+
       display: grid;
       grid-template-rows: 360px 480px;
-      
-      @include md{
+
+      @include md {
          grid-template-columns: 50% auto;
          grid-template-rows: 595px;
-      
+
 
       }
-      @include lg{
+
+      @include lg {
          grid-template-columns: 60% auto;
          grid-template-rows: 625px;
-      
+
       }
-      @include xl{
-         
+
+      @include xl {
+
          grid-area: hero2;
          grid-template-columns: 65% auto;
-         grid-template-rows:415px 415px;
-         grid-template-areas:"h2-1 h2-2" 
-          "h2-1 h2-3";
-          
-       }
-      li{
+         grid-template-rows: 415px 415px;
+         grid-template-areas: "h2-1 h2-2"
+            "h2-1 h2-3";
+
+      }
+
+      li {
          // img{
          //    width: 100%; 
-       
+
          // background-image: url("../img/hero2/left2.jpg");
          background-size: cover;
          background-position: center;
          // height: 361px;
-        
-      }
-         // background-image: url("../img/hero2/right2.jpg");
-         // background-size: cover;
-         // background-position: center;
-         // height: 361px;
-         // @include md{ 
-         //    height: 594px;
-         // }
-         // @include lg{ 
-         //    height: 626px;
-         //    @include xl{ 
-         //       height: 594px;
-         //    }
-         // }
-         // background-image: url("../img/hero2/soup2.jpg");
-        
-         // background-size: cover;
-         //  background-position: center;
-         //  height: 361px;
-
-         
 
       }
-      #h2-1{
-         background-image: url("../img/hero2/left2.jpg");
-         @include xl{grid-area: h2-1;}
-         
 
+      // background-image: url("../img/hero2/right2.jpg");
+      // background-size: cover;
+      // background-position: center;
+      // height: 361px;
+      // @include md{ 
+      //    height: 594px;
+      // }
+      // @include lg{ 
+      //    height: 626px;
+      //    @include xl{ 
+      //       height: 594px;
+      //    }
+      // }
+      // background-image: url("../img/hero2/soup2.jpg");
+
+      // background-size: cover;
+      //  background-position: center;
+      //  height: 361px;
+
+
+
+   }
+
+   #h2-1 {
+      background-image: url("../img/hero2/left2.jpg");
+
+      @include xl {
+         grid-area: h2-1;
       }
-      #h2-2{
-         background-image: url("../img/hero2/right2.jpg");
-         @include xl{grid-area: h2-2; }
-         
 
+
+   }
+
+   #h2-2 {
+      background-image: url("../img/hero2/right2.jpg");
+
+      @include xl {
+         grid-area: h2-2;
       }
-      
-      #h2-3{
-         background-image: url("../img/hero2/soup2.jpg");
-         display: none;
-         @include xl{
-            display: list-item;
-            grid-area: h2-3;
-         }
-         
-         }
-      } 
-   
-   //  display: grid;
-   //  grid-template-columns: 0px auto 0px;
-   //  grid-template-areas:". hero2 .";
 
-   //    @include md {grid-template-columns: 0px auto 0px
-   //    }
-   //    @include lg {grid-template-columns: 0px auto 0px
-   //    }
-   //   >div{
-   //      grid-area: hero2;
-   //   }
+
+   }
+
+   #h2-3 {
+      background-image: url("../img/hero2/soup2.jpg");
+      display: none;
+
+      @include xl {
+         display: list-item;
+         grid-area: h2-3;
+      }
+
+   }
+}
+
+//  display: grid;
+//  grid-template-columns: 0px auto 0px;
+//  grid-template-areas:". hero2 .";
+
+//    @include md {grid-template-columns: 0px auto 0px
+//    }
+//    @include lg {grid-template-columns: 0px auto 0px
+//    }
+//   >div{
+//      grid-area: hero2;
+//   }

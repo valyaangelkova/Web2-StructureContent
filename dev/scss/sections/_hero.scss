@@ -2,6 +2,7 @@
     Hero
 ============= */
 #hero {
+
     // height: 410px;
     //     @include md{ 
     //         height: 503px;
@@ -92,6 +93,7 @@
 
 
     ul {
+
         // height: 68px;
         // @include md{ 
         //     height: 81px;
@@ -159,60 +161,64 @@
                 // padding: 16px 0;
                 // @include md{ 
                 //     padding: 23px 0;
-                    
+
                 // }
-                
+
             }
-            .sub-1{
+
+            .sub-1 {
+
                 // padding: 16px 0;
-                @include xl{ padding-left: 20px;
+                @include xl {
+                    padding-left: 20px;
                     // padding: 23px 0;
-                    
+
                 }
+
                 align-items: center;
-                
-            // h2 {
-            //     font-size: rem-calc(18);
-            //     font-weight: 700;
-            //     padding: 16px 0px 9.5px;
 
-            //     @include lg {
-            //         font-size: rem-calc(25);
-            //         padding: 24px 0px 9.5px;
-            //     }
+                // h2 {
+                //     font-size: rem-calc(18);
+                //     font-weight: 700;
+                //     padding: 16px 0px 9.5px;
 
-            // }
+                //     @include lg {
+                //         font-size: rem-calc(25);
+                //         padding: 24px 0px 9.5px;
+                //     }
 
-            // h3 {
-            //     font-size: rem-calc(14);
-            //     font-weight: 200;
-            //     padding: 0px 0px 16px;
+                // }
 
-            //     @include lg {
-            //         font-size: rem-calc(16);
-            //         padding: 0px 0px 24px;
+                // h3 {
+                //     font-size: rem-calc(14);
+                //     font-weight: 200;
+                //     padding: 0px 0px 16px;
+
+                //     @include lg {
+                //         font-size: rem-calc(16);
+                //         padding: 0px 0px 24px;
 
 
-            //     }
+                //     }
 
-            
-            // h6{
-            //     font-size: rem-calc(16);
-            //     font-weight: 200;
-            //     padding:16px 0px 9.5px; 
-            //     @include lg{ padding: 24px 0px 9.5px;
 
-            //     }
-            // }
-        }
+                // h6{
+                //     font-size: rem-calc(16);
+                //     font-weight: 200;
+                //     padding:16px 0px 9.5px; 
+                //     @include lg{ padding: 24px 0px 9.5px;
 
-           .sub-2 {
-            // padding: 16px 0;
-            // @include md{ 
-            //     padding: 23px 0;
-                
-            
-               display:flex;
+                //     }
+                // }
+            }
+
+            .sub-2 {
+                // padding: 16px 0;
+                // @include md{ 
+                //     padding: 23px 0;
+
+
+                display: flex;
 
                 align-items: center;
 
@@ -224,7 +230,7 @@
                     @include lg {
                         display: block;
                         font-size: rem-calc(18);
-                       
+
 
                     }
                 }
@@ -239,22 +245,25 @@
 
 
 
-        }
-        
-    
+    }
+
+
 
     #part1 {
         background-color: $lime;
         color: white;
         padding: 16px 0;
-        @include md{
+
+        @include md {
             padding: 24px 0;
         }
-        @include lg{
+
+        @include lg {
             padding: 20px 0;
         }
-        @include xl{
-            padding-left: 130px ;
+
+        @include xl {
+            padding-left: 130px;
             padding-right: 16px;
         }
 
@@ -269,6 +278,7 @@
             }
 
         }
+
         h3 {
             font-size: rem-calc(16);
             font-weight: 300;
@@ -280,34 +290,38 @@
 
 
             }
+        }
     }
-}
 
     #part2 {
         // padding: 16px 0;
         // @include md{ 
         //     padding: 23px 0;
-            
+
         // }
         padding: 16px 0;
-        @include md{
+
+        @include md {
             padding: 24px 0;
         }
-        @include lg{
+
+        @include lg {
             padding: 20px 0;
         }
-        @include xl{
-            padding-top: 24px ;
+
+        @include xl {
+            padding-top: 24px;
         }
-        
+
         background-color: $lime-light;
         color: white;
 
         @include xl {
             grid-template-columns: 16px 460px auto;
         }
-        h3{ 
-            display:flex;
+
+        h3 {
+            display: flex;
             align-items: center;
             font-size: rem-calc(16);
             font-weight: 300;
@@ -318,18 +332,19 @@
                 font-weight: 200;
 
                 // padding: 0px 0px 24px;
+            }
         }
+
+        #bold {
+            font-weight: 700;
+            // padding: 0px 0px 16px;
+
+            @include lg {
+
+                // padding: 0px 0px 24px;
+
+            }
+        }
+
     }
-    #bold{
-        font-weight: 700;
-        // padding: 0px 0px 16px;
-
-                    @include lg {
-                       
-                        // padding: 0px 0px 24px;
-
-    }
-}
-
-}
 }
