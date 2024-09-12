@@ -1,0 +1,15 @@
+/* =============
+   Search
+============= */
+  section 
+   {display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas:". search .";
+
+      @include md {grid-template-columns: 32px auto 32px
+      }
+      @include lg {grid-template-columns: 236px auto 236px
+      }
+     >div{
+        grid-area: search;}
+     }
